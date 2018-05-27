@@ -1,0 +1,29 @@
+{
+  "name": "foundswatch",
+  "version": "6.4.2",
+  "description": "Themes for Zurb Foundation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinmahar/foundswatch.git"
+  },
+  "keywords": [
+    "foundation",
+    "zurb",
+    "theme",
+    "themes",
+    "swatch",
+    "swatches",
+    "bootstrap",
+    "bootswatch"
+  ],
+  "author": "Justin Mahar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justinmahar/foundswatch/issues"
+  },
+  "homepage": "https://github.com/justinmahar/foundswatch#readme"
+}
