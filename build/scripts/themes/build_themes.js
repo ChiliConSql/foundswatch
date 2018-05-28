@@ -6,9 +6,6 @@ let fs = require('fs');
 let themeScssDirNames = helpers.getThemeScssDirNames();
 
 for (let index in themeScssDirNames) {
-    helpers.compileScss(themeScssDirNames[index]);
-}
-
-for (let index in themeScssDirNames) {
+    helpers.compileScss(themeScssDirNames[index], false);
     helpers.compileScss(themeScssDirNames[index], true);
 }

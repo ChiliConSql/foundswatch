@@ -5,6 +5,7 @@ exports.themeHelpers = themeHelpers;
 
 let fs = require('fs');
 let path = require("path");
+var shell = require('shelljs');
 let sass = require('node-sass');
 
 let config = require('../config/config').config;
@@ -46,7 +47,7 @@ themeHelpers.compileScss = (themeName, compressed = false) => {
 
     // Writing will fail if the dirs don't exist
     if (!fs.existsSync(currentThemeDistDir)) {
-        fs.mkdirSync(currentThemeDistDir);
+        shell.mkdir('-p', currentThemeDistDir);
     }
 
     fs.writeFileSync(currentThemeDistFilePath, result.css);
