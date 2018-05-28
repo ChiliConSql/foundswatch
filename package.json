@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/justinmahar/foundswatch/issues"
   },
-  "homepage": "https://github.com/justinmahar/foundswatch#readme"
+  "homepage": "https://github.com/justinmahar/foundswatch#readme",
+  "dependencies": {
+    "foundation-sites": "^6.4.4-rc1"
+  }
 }
