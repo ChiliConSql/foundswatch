@@ -13,6 +13,7 @@ config.distDir = "./dist";
 config.themeSrcScssDir = config.srcDir + "/themes/scss";
 config.themeMainScssFilename = "foundation.scss";
 config.themeMainCssFilename = "foundation.css";
+config.themeMainMinCssFilename = "foundation.min.css";
 
 // ------ BUILD STAGING ------------------------------------------------------
 config.themeStagingDir = config.stagingDir + "/themes";
