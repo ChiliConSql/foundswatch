@@ -1,5 +1,7 @@
 # FoundSwatch
 
+![FoundSwatch Logo](/../master/src/site/assets/img/foundswatch-256.png?raw=true "FoundSwatch")
+
 FoundSwatch offers an assortment of "swatches" that let you quickly theme a website based on the Zurb Foundation framework.
 
 # Author
