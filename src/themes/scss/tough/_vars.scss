@@ -16,3 +16,11 @@ $foundation-palette: (
 /// Global value used for all elements that have a border radius.
 /// @type Number
 $global-radius: .2rem !default;
+
+/// Background color of the body.
+/// @type Color
+$body-background: #2e2e47 !default;
+
+/// Text color of the body.
+/// @type Color
+$body-font-color: #e2e2e2 !default;

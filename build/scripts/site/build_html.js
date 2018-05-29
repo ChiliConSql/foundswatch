@@ -7,41 +7,46 @@ let helpers = require('./helpers');
 let config = require('../config');
 let util = require('../util');
 
-// --- Begin script --- 
+// ==== Begin script ====
 
 console.log("Building HTML...");
 
-let templateDirNames = helpers.getThemeTemplateDirNames();
+let themeTemplateViews = helpers.getThemeTemplateViews();
 
-// --- Home index ---
-
+// ------- Home index -------
 // Render the home index template
+
+let themeNames = themeTemplateViews.map((view) => {
+    return view.name;
+})
+
 let indexTemplate = util.readFileContentsSync(config.siteHtmlIndexTemplate);
-let renderedIndex = mustache.render(indexTemplate, {themes : templateDirNames});
+let renderedIndex = mustache.render(indexTemplate, {themeViews : themeTemplateViews});
 
 // Save rendered index file to dist
 util.writeFileContentsSync(config.siteDistHomeIndexHtml, renderedIndex);
 
-// --- Help ---
-
+// ------- Help -------
 // Render the help template
 let helpTemplate = util.readFileContentsSync(config.siteHtmlHelpTemplate);
-let renderedHelpIndex = mustache.render(helpTemplate, {});
+let renderedHelpIndex = mustache.render(helpTemplate, {themeViews : themeTemplateViews});
 
 // Save rendered help file to dist
 util.writeFileContentsSync(config.siteDistHelpIndexHtml, renderedHelpIndex);
 
-// --- Themes ---
+// ------- Themes -------
 let themeTemplate = util.readFileContentsSync(config.siteHtmlThemeTemplate);
 
-for(let index in templateDirNames) {
+for(let index in themeTemplateViews) {
 
-    let themeDirName = templateDirNames[index];
+    let themeView = themeTemplateViews[index];
+    // Make all theme views accessible (so we can link to them)
+    themeView.themeViews = themeTemplateViews;
 
-    let renderedThemeIndex = mustache.render(themeTemplate, {name: themeDirName});
+    let renderedThemeIndex = mustache.render(themeTemplate, themeView);
 
     // Construct the filepath for saving
-    let renderedThemeDir = config.siteDistDir + "/" + themeDirName;
+    let renderedThemeDir = config.siteDistDir + "/" + themeView.dir;
     let renderedThemeIndexPath = renderedThemeDir + "/" + config.siteDistIndexFilename;
 
     // Save rendered theme file to dist

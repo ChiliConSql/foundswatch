@@ -5,16 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FoundSwatch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="themes/buzz/foundation.css" />
-    <link rel="icon" type="img/ico" href="assets/ico/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/themes/{{dir}}/foundation.css" />
+    <link rel="icon" type="img/ico" href="../assets/ico/favicon.ico">
     <script src=""></script>
 </head>
 <body>
-    <img style="border-radius: 50%;" src="assets/img/foundswatch-256.png" alt="foundswatch logo">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell">
-                <p>I am {{name}}.</p>
+                <img style="border-radius: 50%;" src="../assets/img/foundswatch-256.png" alt="foundswatch logo">
+            </div>
+            <div class="cell">
+                <h1>{{name}}</h1>
+                <h4>{{tagline}}</h4>
+            </div>
+            <div class="cell">
+                <div class="button primary">Primary</div>
+                <div class="button secondary">Secondary</div>
+            </div>
+            <div class="cell">
+                <h1>Available Themes:</h1>
+                <ul>
+                    {{#themeViews}}
+                    <li><a href="/{{dir}}">{{name}}</a> - {{tagline}}</li>    
+                    {{/themeViews}}
+                    <li><a href="/">Home</a></li>
+                </ul>
             </div>
         </div>
     </div>
