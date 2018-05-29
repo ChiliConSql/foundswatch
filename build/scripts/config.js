@@ -22,6 +22,12 @@ module.exports = new function () {
     // ------ SOURCE -------------------------------------------------------------
     this.siteHtmlTemplatesDir = this.srcDir + "/site/html/templates";
     this.siteHtmlThemeTemplatesDir = this.siteHtmlTemplatesDir + "/themes";
+    this.siteHtmlIndexTemplate = this.siteHtmlTemplatesDir + "/index.mustache";
 
     // ------ DISTRIBUTION -------------------------------------------------------
+    this.siteDistDir = this.distDir + "/site";
+    this.siteDistIndexFilename = "index.html";
+    this.siteDistHomeIndexHtml = this.siteDistDir + "/" + this.siteDistIndexFilename;
+    this.siteDistHelpDir = this.distDir + "/help";
+    this.siteDistHelpIndexHtml = this.siteDistHelpDir + "/" + this.siteDistIndexFilename;
 }

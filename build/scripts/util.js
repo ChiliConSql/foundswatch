@@ -1,7 +1,9 @@
 // Imports
 let fs = require('fs');
-var shell = require('shelljs');
-var path = require('path');
+let shell = require('shelljs');
+let path = require('path');
+
+let encoding = "utf8";
 
 // Export
 module.exports = {
@@ -25,5 +27,10 @@ module.exports = {
         }
 
         fs.writeFileSync(filePath, contents);
+    },
+
+    readFileContentsSync: (filePath) => {
+
+        return fs.readFileSync(filePath, encoding);
     }
 }
