@@ -1,5 +1,5 @@
-let helpers = require('./helpers').themeHelpers;
-let config = require('../config/config').config;
+let helpers = require('./helpers').helpers;
+let config = require('../config').config;
 let sass = require('node-sass');
 let fs = require('fs');
 
