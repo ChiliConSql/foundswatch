@@ -3,24 +3,29 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FoundSwatch</title>
+    <title>Foundswatch: Free themes for Zurb Foundation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="vendor/foundation/css/foundation.css" />
-    <link rel="icon" type="img/ico" href="assets/ico/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="./vendor/foundation/css/foundation.css" />
+    <link rel="icon" type="img/ico" href="./assets/ico/favicon.ico">
     <script src=""></script>
 </head>
 <body>
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell">
-                <img style="border-radius: 50%;" src="assets/img/foundswatch-256.png" alt="foundswatch logo">
+                <img style="border-radius: 50%;" src="./assets/img/foundswatch-256.png" alt="foundswatch logo">
+            </div>
+            <div class="cell">
+                <h1>Foundswatch</h1>
+                <h4>Free themes for Zurb Foundation</h4>
             </div>
             <div class="cell">
                 <h1>Available Themes:</h1>
                 <ul>
                     {{#themeViews}}
-                    <li><a href="/{{dir}}">{{name}}</a> - {{tagline}}</li>    
+                    <li><a href="./{{dir}}">{{name}}</a> - {{tagline}}</li>    
                     {{/themeViews}}
+                    <li><a href="./help">Help</a></li>
                 </ul>
             </div>
         </div>

@@ -30,6 +30,6 @@ module.exports = new function () {
     this.siteDistDir = this.distDir + "/site";
     this.siteDistIndexFilename = "index.html";
     this.siteDistHomeIndexHtml = this.siteDistDir + "/" + this.siteDistIndexFilename;
-    this.siteDistHelpDir = this.distDir + "/help";
+    this.siteDistHelpDir = this.siteDistDir + "/help";
     this.siteDistHelpIndexHtml = this.siteDistHelpDir + "/" + this.siteDistIndexFilename;
 }

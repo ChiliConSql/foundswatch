@@ -5,16 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FoundSwatch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="themes/buzz/foundation.css" />
-    <link rel="icon" type="img/ico" href="assets/ico/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="../vendor/foundation/css/foundation.css" />
+    <link rel="icon" type="img/ico" href="../assets/ico/favicon.ico">
     <script src=""></script>
 </head>
 <body>
-    <img style="border-radius: 50%;" src="assets/img/foundswatch-256.png" alt="foundswatch logo">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell">
-            <h1>Help</h1>
+                <img style="border-radius: 50%;" src="../assets/img/foundswatch-256.png" alt="foundswatch logo">
+            </div>
+            <div class="cell">
+                <h1>Help</h1>
+            </div>
+            <div class="cell">
+                <div class="button primary">Primary</div>
+                <div class="button secondary">Secondary</div>
+            </div>
+            <div class="cell">
+                <h1>Available Themes:</h1>
+                <ul>
+                    {{#themeViews}}
+                    <li><a href="/{{dir}}">{{name}}</a> - {{tagline}}</li>    
+                    {{/themeViews}}
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../help">Help</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
