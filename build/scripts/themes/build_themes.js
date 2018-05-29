@@ -5,10 +5,11 @@ let fs = require('fs');
 // Local imports
 let helpers = require('./helpers');
 let config = require('../config');
+let util = require('../util');
 
 // --- Begin script --- 
 
-let themeScssDirNames = helpers.getThemeScssDirNames();
+let themeScssDirNames = util.getDirNamesSync(config.themeSrcScssDir);
 
 for (let index in themeScssDirNames) {
     helpers.compileThemeScss(themeScssDirNames[index], {compressed: false});

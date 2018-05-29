@@ -13,6 +13,11 @@ module.exports = {
     getThemeTemplateDirNames: () => {
         let siteHtmlThemeTemplatesDir = config.siteHtmlThemeTemplatesDir;
         return util.getDirNamesSync(siteHtmlThemeTemplatesDir);
+    },
+
+    getThemeTemplateViews: () => {
+        let siteHtmlThemeTemplatesDir = config.siteHtmlThemeTemplatesDir;
+        return util.getDirNamesSync(siteHtmlThemeTemplatesDir);
     }
 
 };

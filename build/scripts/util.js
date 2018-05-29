@@ -12,7 +12,11 @@ module.exports = {
         let nameArray = [];
         let items = fs.readdirSync(dirPath);
         for (let i = 0; i < items.length; i++) {
-            nameArray.push(items[i]);
+            let currItem = items[i];
+            let currPath = dirPath + "/" + currItem;
+            if(fs.lstatSync(currPath).isDirectory()) {
+                nameArray.push(items[i]);
+            }
         }
         return nameArray;
     },
@@ -21,7 +25,8 @@ module.exports = {
 
         let dirname = path.dirname(filePath);
 
-        // Writing will fail if the dirs don't exist
+        // Writing will normally fail if the dirs don't exist.
+        // Create the full dir path before writing.
         if (!fs.existsSync(dirname)) {
             shell.mkdir('-p', dirname);
         }
@@ -30,7 +35,6 @@ module.exports = {
     },
 
     readFileContentsSync: (filePath) => {
-
         return fs.readFileSync(filePath, encoding);
     }
 }

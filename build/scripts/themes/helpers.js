@@ -9,19 +9,6 @@ let config = require('../config');
 let util = require('../util');
 
 module.exports = {
-
-    getThemeScssDirNames: () => {
-
-        let nameArray = [];
-        let themeSrcScssDir = config.themeSrcScssDir;
-        let items = fs.readdirSync(themeSrcScssDir);
-        for (let i = 0; i < items.length; i++) {
-            nameArray.push(items[i]);
-        }
-
-        return nameArray;
-    },
-
     /*
      *  When compressed is true, node-sass uses outputStyle of "compressed", otherwise it uses "nested".
      */

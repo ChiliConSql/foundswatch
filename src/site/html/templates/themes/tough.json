@@ -1,6 +1,7 @@
 {
     "name" : "Tough",
     "tagline" : "Grit and mettle",
+    "dir" : "tough",
     "jsfiddle" : "https://jsfiddle.net/",
     "theme_css" : "#",
     "theme_css_min" : "#",
