@@ -1,26 +1,27 @@
-let config = {};
-exports.config = config;
+// Export
+module.exports = new function () {
 
-// ==== GENERAL ==============================================================
-// Note: Directories should not end with a slash /.
-config.srcDir = "./src";
-config.distDir = "./dist";
+    // ==== GENERAL ==============================================================
+    // Note: Directories should not end with a slash /.
+    this.srcDir = "./src";
+    this.distDir = "./dist";
 
-// ==== THEMES ===============================================================
+    // ==== THEMES ===============================================================
 
-// ------ SOURCE -------------------------------------------------------------
-config.themeSrcScssDir = config.srcDir + "/themes/scss";
-config.themeMainScssFilename = "foundation.scss";
-config.themeMainCssFilename = "foundation.css";
-config.themeMainMinCssFilename = "foundation.min.css";
+    // ------ SOURCE -------------------------------------------------------------
+    this.themeSrcScssDir = this.srcDir + "/themes/scss";
+    this.themeMainScssFilename = "foundation.scss";
+    this.themeMainCssFilename = "foundation.css";
+    this.themeMainMinCssFilename = "foundation.min.css";
 
-// ------ DISTRIBUTION -------------------------------------------------------
-config.themeDistDir = config.distDir + "/themes";
+    // ------ DISTRIBUTION -------------------------------------------------------
+    this.themeDistDir = this.distDir + "/themes";
 
-// ==== SITE =================================================================
+    // ==== SITE =================================================================
 
-// ------ SOURCE -------------------------------------------------------------
-config.siteHtmlTemplatesDir = config.srcDir + "/site/html/templates";
+    // ------ SOURCE -------------------------------------------------------------
+    this.siteHtmlTemplatesDir = this.srcDir + "/site/html/templates";
+    this.siteHtmlThemeTemplatesDir = this.siteHtmlTemplatesDir + "/themes";
 
-// ------ DISTRIBUTION -------------------------------------------------------
-
+    // ------ DISTRIBUTION -------------------------------------------------------
+}
