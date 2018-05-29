@@ -1,6 +1,6 @@
 {
   "name": "foundswatch",
-  "version": "6.4.2",
+  "version": "0.1.1",
   "description": "FoundSwatch: Themes for Zurb Foundation",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/justinmahar/foundswatch#readme",
   "dependencies": {
-    "foundation-sites": "^6.4.4-rc1"
+    "foundation-sites": "^6.4.3"
   },
   "devDependencies": {
     "copyfiles": "^2.0.0",
