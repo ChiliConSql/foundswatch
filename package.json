@@ -9,7 +9,8 @@
     "build-themes": "node ./build/scripts/themes/build_themes.js",
     "build-site": "npm-run-all -p build-site:copy-assets build-site:copy-js build-site:copy-dist-themes build-site:copy-foundation-assets build-site:build-html",
     "build-site:copy-assets": "copyfiles -u 2 \"./src/site/assets/**\" dist/site",
-    "build-site:copy-js": "copyfiles -u 1 \"./src/site/js/**\" dist/site/js",
+    "build-site:build-js": "webpack",
+    "build-site:build-css": "node-sass ./src/site/scss/custom.scss ./dist/site/css/custom.css",
     "build-site:copy-dist-themes": "copyfiles -u 1 \"./dist/themes/**\" dist/site/css",
     "build-site:copy-foundation-assets": "copyfiles -u 3 \"node_modules/foundation-sites/dist/css/**\" dist/site/vendor/foundation && copyfiles -u 3 \"node_modules/foundation-sites/dist/js/**\" dist/site/vendor/foundation",
     "build-site:build-html": "node ./build/scripts/site/build_html.js",
@@ -20,7 +21,9 @@
   },
   "watch": {
     "build-site:build-html": "src/site/html/**/*.*",
-    "build-site:build-and-copy-themes": "src/themes/scss/**/*.*"
+    "build-site:build-and-copy-themes": "src/themes/scss/**/*.*",
+    "build-site:build-js": "src/site/js/**/*.js",
+    "build-site:build-css": "src/site/scss/**/*.scss"
   },
   "repository": {
     "type": "git",
@@ -53,6 +56,8 @@
     "npm-run-all": "^4.1.3",
     "npm-watch": "^0.3.0",
     "rimraf": "^2.6.2",
-    "shelljs": "^0.8.2"
+    "shelljs": "^0.8.2",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^2.1.4"
   }
 }

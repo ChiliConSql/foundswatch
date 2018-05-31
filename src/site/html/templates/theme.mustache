@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Foundswatch: {{name}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/themes/{{dir}}/foundation.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{root}}/css/themes/{{dir}}/foundation.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
-    <link rel="icon" type="img/ico" href="../assets/ico/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{root}}/css/custom.css" />
+    <link rel="icon" type="img/ico" href="{{root}}/assets/ico/favicon.ico">
 </head>
 
 <body>
@@ -33,29 +34,29 @@
                 <div class="top-bar-left">
                     <ul class="dropdown menu" data-dropdown-menu>
                         <li class="menu-text">
-                            <a href="../" style="padding: 0;">Foundswatch</a>
+                            <a href="{{root}}/" style="padding: 0;">Foundswatch</a>
                         </li>
                         <li class="has-submenu">
                             <a href="#0">Themes</a>
                             <ul class="submenu menu vertical" data-submenu>
                                 {{#themeViews}}
                                 <li>
-                                    <a href="../{{dir}}">{{name}}</a>
+                                    <a href="{{root}}/{{dir}}">{{name}}</a>
                                 </li>
                                 {{/themeViews}}
                             </ul>
                         </li>
                         <li>
-                            <a href="../help">Help</a>
+                            <a href="{{root}}/help">Help</a>
                         </li>
                         <li class="has-submenu">
                             <a href="#0">{{name}}</a>
                             <ul class="submenu menu vertical" data-submenu>
                                 <li>
-                                    <a href="../css/themes/{{dir}}/foundation.css">foundation.css</a>
+                                    <a href="{{root}}/css/themes/{{dir}}/foundation.css">foundation.css</a>
                                 </li>
                                 <li>
-                                    <a href="../css/themes/{{dir}}/foundation.min.css">foundation.min.css</a>
+                                    <a href="{{root}}/css/themes/{{dir}}/foundation.min.css">foundation.min.css</a>
                                 </li>
                             </ul>
                         </li>
@@ -145,89 +146,92 @@
 
                 <div class="grid-x grid-margin-x">
                     <div class="cell small-6">
-                        <div>
-                            <a class="button primary" href="#0">Primary</a>
-                            <a class="button secondary" href="#0">Secondary</a>
-                            <a class="button success" href="#0">Success</a>
-                            <a class="button warning" href="#0">Warning</a>
-                            <a class="button alert" href="#0">Alert</a>
-                            <a href="#0" class="button">Link</a>
-                        </div>
-                        <div>
-                            <button type="button" class="button primary" disabled>Primary</button>
-                            <button type="button" class="button secondary" disabled>Secondary</button>
-                            <button type="button" class="button success" disabled>Success</button>
-                            <button type="button" class="button warning" disabled>Warning</button>
-                            <button type="button" class="button alert" disabled>Alert</button>
-                            <a href="#0" class="button disabled" disabled>Link</a>
-                        </div>
-                        <div>
-                            <button class="hollow button" href="#0">Primary</button>
-                            <button class="hollow button secondary" href="#0">Secondary</button>
-                            <button class="hollow button success" href="#0">Success</button>
-                            <button class="hollow button warning" href="#0">Warning</button>
-                            <button class="hollow button alert" href="#0">Alert</button>
-                            <a href="#0" class="hollow button">Link</a>
-                        </div>
-                        <div>
-                            <button class="hollow button" href="#0" disabled>Primary</button>
-                            <button class="hollow button secondary" href="#0" disabled>Secondary</button>
-                            <button class="hollow button success" href="#0" disabled>Success</button>
-                            <button class="hollow button warning" href="#0" disabled>Warning</button>
-                            <button class="hollow button alert" href="#0" disabled>Alert</button>
-                            <a class="hollow button" href="#0" disabled>Link</a>
-                        </div>
-                        <div>
-                            <a class="clear button" href="#0">Primary</a>
-                            <a class="clear button secondary" href="#0">Secondary</a>
-                            <a class="clear button success" href="#0">Success</a>
-                            <a class="clear button warning" href="#0">Warning</a>
-                            <a class="clear button alert" href="#0">Alert</a>
-                            <a class="clear button" href="#0" disabled>Disabled</a>
-                        </div>
-                        <div>
-                            <button class="dropdown button primary" data-toggle="example-dropdown-primary">Primary</button>
-                            <div class="dropdown-pane" id="example-dropdown-primary" data-dropdown data-auto-focus="true">
-                                Example form in a dropdown.
-                                <form>
-                                    <div class="grid-container">
-                                        <div class="grid-x grid-margin-x">
-                                            <div class="cell medium-6">
-                                                <label>Name
-                                                    <input type="text" placeholder="Kirk, James T.">
-                                                </label>
-                                            </div>
-                                            <div class="cell medium-6">
-                                                <label>Rank
-                                                    <input type="text" placeholder="Captain">
-                                                </label>
+
+                        <div class="zf-code-reveal">
+                            <div>
+                                <a class="button primary" href="#0">Primary</a>
+                                <a class="button secondary" href="#0">Secondary</a>
+                                <a class="button success" href="#0">Success</a>
+                                <a class="button warning" href="#0">Warning</a>
+                                <a class="button alert" href="#0">Alert</a>
+                                <a href="#0" class="button">Link</a>
+                            </div>
+                            <div>
+                                <button type="button" class="button primary" disabled>Primary</button>
+                                <button type="button" class="button secondary" disabled>Secondary</button>
+                                <button type="button" class="button success" disabled>Success</button>
+                                <button type="button" class="button warning" disabled>Warning</button>
+                                <button type="button" class="button alert" disabled>Alert</button>
+                                <a href="#0" class="button disabled" disabled>Link</a>
+                            </div>
+                            <div>
+                                <button class="hollow button" href="#0">Primary</button>
+                                <button class="hollow button secondary" href="#0">Secondary</button>
+                                <button class="hollow button success" href="#0">Success</button>
+                                <button class="hollow button warning" href="#0">Warning</button>
+                                <button class="hollow button alert" href="#0">Alert</button>
+                                <a href="#0" class="hollow button">Link</a>
+                            </div>
+                            <div>
+                                <button class="hollow button" href="#0" disabled>Primary</button>
+                                <button class="hollow button secondary" href="#0" disabled>Secondary</button>
+                                <button class="hollow button success" href="#0" disabled>Success</button>
+                                <button class="hollow button warning" href="#0" disabled>Warning</button>
+                                <button class="hollow button alert" href="#0" disabled>Alert</button>
+                                <a class="hollow button" href="#0" disabled>Link</a>
+                            </div>
+                            <div>
+                                <a class="clear button" href="#0">Primary</a>
+                                <a class="clear button secondary" href="#0">Secondary</a>
+                                <a class="clear button success" href="#0">Success</a>
+                                <a class="clear button warning" href="#0">Warning</a>
+                                <a class="clear button alert" href="#0">Alert</a>
+                                <a class="clear button" href="#0" disabled>Disabled</a>
+                            </div>
+                            <div>
+                                <button class="dropdown button primary" data-toggle="example-dropdown-primary">Primary</button>
+                                <div class="dropdown-pane" id="example-dropdown-primary" data-dropdown data-auto-focus="true">
+                                    Example form in a dropdown.
+                                    <form>
+                                        <div class="grid-container">
+                                            <div class="grid-x grid-margin-x">
+                                                <div class="cell medium-6">
+                                                    <label>Name
+                                                        <input type="text" placeholder="Kirk, James T.">
+                                                    </label>
+                                                </div>
+                                                <div class="cell medium-6">
+                                                    <label>Rank
+                                                        <input type="text" placeholder="Captain">
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
+                                <button class="dropdown button secondary" data-toggle="example-dropdown-secondary">Secondary</button>
+                                <div class="dropdown-pane" id="example-dropdown-secondary" data-dropdown>
+                                    This is the dropdown pane content.
+                                </div>
+                                <button class="dropdown button success" data-toggle="example-dropdown-success">Success</button>
+                                <div class="dropdown-pane top" id="example-dropdown-success" data-dropdown>
+                                    Success dropdown. This should appear above the button.
+                                </div>
+                                <button class="dropdown button warning" data-toggle="example-dropdown-warning">Warning</button>
+                                <div class="dropdown-pane" id="example-dropdown-warning" data-dropdown>
+                                    Warning dropdown.
+                                </div>
+                                <button class="dropdown button alert" data-toggle="example-dropdown-alert">Alert</button>
+                                <div class="dropdown-pane" id="example-dropdown-alert" data-dropdown>
+                                    Alert dropdown.
+                                </div>
                             </div>
-                            <button class="dropdown button secondary" data-toggle="example-dropdown-secondary">Secondary</button>
-                            <div class="dropdown-pane" id="example-dropdown-secondary" data-dropdown>
-                                This is the dropdown pane content.
+                            <div>
+                                <div class="large button">Large</div>
+                                <div class="button">Default</div>
+                                <div class="small button">Small</div>
+                                <div class="tiny button">Tiny</div>
                             </div>
-                            <button class="dropdown button success" data-toggle="example-dropdown-success">Success</button>
-                            <div class="dropdown-pane top" id="example-dropdown-success" data-dropdown>
-                                Success dropdown. This should appear above the button.
-                            </div>
-                            <button class="dropdown button warning" data-toggle="example-dropdown-warning">Warning</button>
-                            <div class="dropdown-pane" id="example-dropdown-warning" data-dropdown>
-                                Warning dropdown.
-                            </div>
-                            <button class="dropdown button alert" data-toggle="example-dropdown-alert">Alert</button>
-                            <div class="dropdown-pane" id="example-dropdown-alert" data-dropdown>
-                                Alert dropdown.
-                            </div>
-                        </div>
-                        <div>
-                            <div class="large button">Large</div>
-                            <div class="button">Default</div>
-                            <div class="small button">Small</div>
-                            <div class="tiny button">Tiny</div>
                         </div>
                     </div>
                     <div class="cell small-6">
@@ -1171,23 +1175,42 @@ This is preformatted text.
                     </div>
 
                     <h3>Modals</h3>
-                    <p>
-                        <a data-open="modalDialog" class="button">Reveal Modal</a>
-                    </p>
-                    <div class="reveal" id="modalDialog" data-reveal>
-                        <h1>Modal Dialog</h1>
-                        <p class="lead">
-                            <strong>This is strong lead text.</strong> You should now see the modal.</p>
-                        <p>This is a paragraph of text inside the modal dialog.</p>
-                        <p>And
-                            <a href="#0">this is a link</a> inside the modal dialog.</p>
+                    <div class="zf-code-reveal">
                         <p>
-                            <a class="button primary" href="#0" data-close aria-label="Close reveal">OK</a>
-                            <a class="button alert" href="#0" data-close aria-label="Close reveal">Cancel</a>
+                            <a data-open="modalDialog" class="button">Reveal Modal</a>
                         </p>
-                        <button class="close-button" data-close aria-label="Close reveal" type="button">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <!--SHOW-CODE
+                        <div class="reveal" id="modalDialog" data-reveal>
+                            <h1>Modal Dialog</h1>
+                            <p class="lead">
+                                <strong>This is strong lead text.</strong> You should now see the modal.</p>
+                            <p>This is a paragraph of text inside the modal dialog.</p>
+                            <p>And
+                                <a href="#0">this is a link</a> inside the modal dialog.</p>
+                            <p>
+                                <a class="button primary" href="#0" data-close aria-label="Close reveal">OK</a>
+                                <a class="button alert" href="#0" data-close aria-label="Close reveal">Cancel</a>
+                            </p>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        SHOW-CODE-->
+                        <div class="reveal" id="modalDialog" data-reveal>
+                            <h1>Modal Dialog</h1>
+                            <p class="lead">
+                                <strong>This is strong lead text.</strong> You should now see the modal.</p>
+                            <p>This is a paragraph of text inside the modal dialog.</p>
+                            <p>And
+                                <a href="#0">this is a link</a> inside the modal dialog.</p>
+                            <p>
+                                <a class="button primary" href="#0" data-close aria-label="Close reveal">OK</a>
+                                <a class="button alert" href="#0" data-close aria-label="Close reveal">Cancel</a>
+                            </p>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="cell medium-3">
@@ -1209,8 +1232,9 @@ This is preformatted text.
                         </div>
                         <div class="media-object-section">
                             <h4>What is a media object?</h4>
-                            <p>Media objects are handy components that display an item, which is usually an image, next to some content, which is usually
-                                some text. You can put lists, grids, and even other media objects inside of them.</p>
+                            <p>Media objects are handy components that display an item, which is usually an image, next to some
+                                content, which is usually some text. You can put lists, grids, and even other media objects
+                                inside of them.</p>
                             <p>
                                 <a href="#0">This is a link inside the media object</a>
                             </p>
@@ -1291,44 +1315,55 @@ This is preformatted text.
         </div>
     </div>
 
+    <div class="reveal" id="codeRevealModal" data-reveal>
+        <h4>Source Code</h4>
+        <pre id="codeRevealHtmlTarget" contenteditable="true">
+            Test.
+        </pre>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="../vendor/foundation/js/foundation.js"></script>
+    <script src="{{root}}/vendor/foundation/js/foundation.js"></script>
 
-    <script src="../vendor/foundation/js/plugins/foundation.core.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.box.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.imageLoader.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.keyboard.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.mediaQuery.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.motion.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.nest.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.timer.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.touch.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.util.triggers.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.abide.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.accordion.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.accordionMenu.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.drilldown.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.dropdown.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.dropdownMenu.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.equalizer.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.interchange.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.smoothScroll.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.magellan.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.offcanvas.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.orbit.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.responsiveMenu.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.responsiveToggle.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.reveal.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.slider.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.sticky.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.tabs.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.toggler.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.tooltip.js"></script>
-    <script src="../vendor/foundation/js/plugins/foundation.responsiveAccordionTabs.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.core.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.box.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.imageLoader.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.keyboard.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.mediaQuery.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.motion.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.nest.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.timer.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.touch.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.triggers.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.abide.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.accordion.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.accordionMenu.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.drilldown.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.dropdown.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.dropdownMenu.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.equalizer.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.interchange.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.smoothScroll.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.magellan.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.offcanvas.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.orbit.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveMenu.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveToggle.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.reveal.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.slider.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.sticky.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.tabs.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.toggler.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.tooltip.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveAccordionTabs.js"></script>
     <script>
         $(document).foundation();
     </script>
+    <script src="{{root}}/js/bundle.js"></script>
 </body>
 
 </html>
