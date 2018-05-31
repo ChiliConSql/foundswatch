@@ -291,27 +291,27 @@
                                 <div class="grid-x grid-margin-x">
                                     <div class="cell medium-6">
                                         <div class="switch large">
-                                            <input class="switch-input" id="largeSwitch" type="checkbox" checked name="exampleSwitch">
+                                            <input class="switch-input" id="largeSwitch" type="checkbox" checked name="exampleSwitch1">
                                             <label class="switch-paddle" for="largeSwitch">
                                                 <span class="show-for-sr">Large Switch</span>
                                             </label>
                                         </div>
                                         <div class="switch">
-                                            <input class="switch-input" id="defaultSwitch" type="checkbox" name="exampleSwitch">
+                                            <input class="switch-input" id="defaultSwitch" type="checkbox" name="exampleSwitch2">
                                             <label class="switch-paddle" for="defaultSwitch">
                                                 <span class="show-for-sr">Default Switch</span>
                                             </label>
                                         </div>
 
                                         <div class="switch small">
-                                            <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+                                            <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch3">
                                             <label class="switch-paddle" for="smallSwitch">
                                                 <span class="show-for-sr">Small Switch</span>
                                             </label>
                                         </div>
 
                                         <div class="switch tiny">
-                                            <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+                                            <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch4">
                                             <label class="switch-paddle" for="tinySwitch">
                                                 <span class="show-for-sr">Tiny Switch</span>
                                             </label>
@@ -319,8 +319,8 @@
                                     </div>
                                     <div class="cell medium-6">
                                         <div class="switch large">
-                                            <input class="switch-input" id="on-off" type="checkbox" checked name="exampleSwitch">
-                                            <label class="switch-paddle" for="on-off">
+                                            <input class="switch-input" id="on-off1" type="checkbox" checked name="exampleSwitch5">
+                                            <label class="switch-paddle" for="on-off1">
                                                 <span class="show-for-sr">On/off switch</span>
                                                 <span class="switch-active" aria-hidden="true">On</span>
                                                 <span class="switch-inactive" aria-hidden="true">Off</span>
@@ -328,8 +328,8 @@
                                         </div>
 
                                         <div class="switch large">
-                                            <input class="switch-input" id="on-off" type="checkbox" name="exampleSwitch">
-                                            <label class="switch-paddle" for="on-off">
+                                            <input class="switch-input" id="on-off2" type="checkbox" name="exampleSwitch6">
+                                            <label class="switch-paddle" for="on-off2">
                                                 <span class="show-for-sr">On/off switch</span>
                                                 <span class="switch-active" aria-hidden="true">On</span>
                                                 <span class="switch-inactive" aria-hidden="true">Off</span>
@@ -474,6 +474,9 @@
                     <p>The following is code:
                         <code>&lt;div&gt;</code>
                     </p>
+                    <pre>
+This is preformatted text.
+</pre>
                 </div>
                 <div class="cell medium-4">
                     <h3>Keystrokes</h3>
@@ -956,11 +959,11 @@
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-6">
                     <h3>Badges</h3>
-                    <span class="primary badge">Primary</span>
-                    <span class="secondary badge">Secondary</span>
-                    <span class="success badge">Success</span>
-                    <span class="warning badge">Warning</span>
-                    <span class="alert badge">Alert</span>
+                    <span class="primary badge">1</span>
+                    <span class="secondary badge">2</span>
+                    <span class="success badge">S</span>
+                    <span class="warning badge">W</span>
+                    <span class="alert badge">A</span>
                 </div>
                 <div class="cell medium-6">
                     <h3>Labels</h3>
@@ -974,29 +977,48 @@
 
             <h3>Progress Bars</h3>
 
-            <h4>Textless</h4>
+            <h4>Without Text</h4>
             <div class="progress" role="progressbar" aria-valuenow="17" aria-valuetext="17 percent" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-meter" style="width: 17%"></div>
             </div>
             <div class="secondary progress" role="progressbar" aria-valuenow="33" aria-valuetext="33 percent" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-meter" style="width: 33%"></div>
             </div>
-            <div class="success progress" aria-valuenow="50" aria-valuetext="50 percent" aria-valuemin="0" aria-valuemax="100">
+            <div class="success progress" role="progressbar" aria-valuenow="50" aria-valuetext="50 percent" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-meter" style="width: 50%"></div>
             </div>
-            <div class="warning progress" aria-valuenow="67" aria-valuetext="67 percent" aria-valuemin="0" aria-valuemax="100">
+            <div class="warning progress" role="progressbar" aria-valuenow="67" aria-valuetext="67 percent" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-meter" style="width: 67%"></div>
             </div>
-            <div class="alert progress" aria-valuenow="83" aria-valuetext="83 percent" aria-valuemin="0" aria-valuemax="100">
+            <div class="alert progress" role="progressbar" aria-valuenow="83" aria-valuetext="83 percent" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-meter" style="width: 83%"></div>
             </div>
             <h4>With Text</h4>
-            <div class="progress" role="progressbar" aria-valuenow="42" aria-valuetext="42 percent" aria-valuemin="0" aria-valuemax="100">
-                <span class="progress-meter" style="width: 42%">
-                    <p class="progress-meter-text">42%</p>
+            <div class="progress" role="progressbar" aria-valuenow="17" aria-valuetext="17 percent" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-meter" style="width: 17%">
+                    <p class="progress-meter-text">Loading...</p>
                 </span>
             </div>
-
+            <div class="secondary progress" role="progressbar" aria-valuenow="33" aria-valuetext="33 percent" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-meter" style="width: 33%">
+                    <p class="progress-meter-text">33%</p>
+                </span>
+            </div>
+            <div class="success progress" role="progressbar" aria-valuenow="50" aria-valuetext="50 percent" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-meter" style="width: 50%">
+                    <p class="progress-meter-text">Progress: 50%</p>
+                </span>
+            </div>
+            <div class="warning progress" role="progressbar" aria-valuenow="67" aria-valuetext="67 percent" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-meter" style="width: 67%">
+                    <p class="progress-meter-text">67% Complete</p>
+                </span>
+            </div>
+            <div class="alert progress" role="progressbar" aria-valuenow="83" aria-valuetext="83 percent" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-meter" style="width: 83%">
+                    <p class="progress-meter-text">Almost done... (83%)</p>
+                </span>
+            </div>
         </div>
         <div class="cell">
             <!-- Containers -->
@@ -1033,7 +1055,7 @@
                         <button class="close-button" aria-label="Close alert" type="button" data-close>
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <h5>This is a callout</h5>
+                        <h5>This is a default callout</h5>
                         <p>
                             <strong>Hey!</strong> This is paragraph text inside the default callout.</p>
                         <a href="#0">This is a link inside the callout</a>
@@ -1046,7 +1068,7 @@
                         </button>
                         <h5>This is a primary callout</h5>
                         <p>
-                            <strong>Welcome!</strong> This is paragraph text inside the callout.</p>
+                            <strong>Welcome!</strong> This is paragraph text inside the primary callout.</p>
                         <a href="#0">This is a link inside the callout</a>
                     </div>
                 </div>
@@ -1057,7 +1079,7 @@
                         </button>
                         <h5>This is a secondary callout</h5>
                         <p>
-                            <strong>Did you know?</strong> This is paragraph text inside the callout.</p>
+                            <strong>Did you know?</strong> This is paragraph text inside the secondary callout.</p>
                         <a href="#0">This is a link inside the callout</a>
                     </div>
                 </div>
@@ -1070,7 +1092,7 @@
                         </button>
                         <h5>This is a success callout</h5>
                         <p>
-                            <strong>Success!</strong> This is paragraph text inside the callout.</p>
+                            <strong>Hooray!</strong> This is paragraph text inside the success callout.</p>
                         <a href="#0">This is a link inside the callout</a>
                     </div>
                 </div>
@@ -1081,7 +1103,7 @@
                         </button>
                         <h5>This is a warning callout</h5>
                         <p>
-                            <strong>Look out!</strong> This is paragraph text inside the callout.</p>
+                            <strong>Be careful!</strong> This is paragraph text inside the warning callout.</p>
                         <a href="#0">This is a link inside the callout</a>
                     </div>
                 </div>
@@ -1092,7 +1114,7 @@
                         </button>
                         <h5>This is an alert callout</h5>
                         <p>
-                            <strong>Whoops!</strong> This is paragraph text inside the callout.</p>
+                            <strong>Whoops!</strong> This is paragraph text inside the alert callout.</p>
                         <a href="#0">This is a link inside the callout</a>
                     </div>
                 </div>
