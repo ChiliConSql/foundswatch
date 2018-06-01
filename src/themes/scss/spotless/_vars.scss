@@ -1,0 +1,35 @@
+/*
+ * This is the partial that defines the theme's variables. These override the ones Foundation provides.
+ * If you want to customize this theme, place your custom variables in _customvars.scss.
+ */
+
+/// Colors used for buttons, callouts, links, etc. There must always be a color called `primary`.
+/// @type Map
+$foundation-palette: (
+  primary: #4ABDAC,
+  secondary: #241B13,
+  success: #70E258,
+  warning: #F7B733,
+  alert: #FC4A1a,
+) !default;
+
+/// Global value used for all elements that have a border radius.
+/// @type Number
+$global-radius: .3rem !default;
+
+/// Background color of the body.
+/// @type Color
+// $body-background: #2e2e47 !default;
+
+/// Text color of the body.
+/// @type Color
+// $body-font-color: #e2e2e2 !default;
+
+
+/// Padding for the top bar.
+/// @type Number
+$topbar-padding: .4rem !default;
+
+/// Background color for the top bar. This color also cascades to menus within the top bar.
+/// @type Color
+$topbar-background: rgba(0,0,0,0) !default;

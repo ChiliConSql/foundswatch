@@ -1,0 +1,39 @@
+/*
+ * This is the partial that defines the theme's styles. These override the ones Foundation provides.
+ * If you want to customize this theme, place your custom styles in _customstyles.scss.
+ */
+
+.top-bar .menu-text, .top-bar .menu-text a {
+    color: $white;
+}
+
+.top-bar ul li, .top-bar ul li a {
+    color: $medium-gray;
+}
+
+.top-bar ul li:hover, .top-bar ul li a:hover {
+    color: $white;
+}
+
+// Dropdown Menu Active state
+.dropdown.menu .is-active > a {
+    color: $white;
+}
+
+.top-bar {
+    background: #4ABDAC;
+    background: -webkit-linear-gradient(180deg, #4ABDAC 0%, rgb(48, 122, 111) 100%);
+    background: linear-gradient(180deg, #4ABDAC 0%, rgb(48, 122, 111) 100%);
+}
+
+.top-bar ul ul {
+    background: rgb(48, 122, 111);
+}
+
+.is-dropdown-submenu {
+    border: 1px solid rgb(38, 94, 85);
+}
+
+.button {
+    border: 1px solid rgb(38, 94, 85);
+}

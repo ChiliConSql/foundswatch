@@ -1,0 +1,10 @@
+{
+    "name" : "Spotless",
+    "tagline" : "Fresh and clean",
+    "dir" : "spotless",
+    "jsfiddle" : "https://jsfiddle.net/",
+    "theme_css" : "#",
+    "theme_css_min" : "#",
+    "theme_vars" : "#",
+    "theme_styles" : "#"
+}

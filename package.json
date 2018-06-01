@@ -23,7 +23,7 @@
     "build-site:build-html": "src/site/html/**/*.*",
     "build-site:build-and-copy-themes": "src/themes/scss/**/*.*",
     "build-site:build-js": "src/site/js/**/*.js",
-    "build-site:build-css": "src/site/scss/**/*.scss"
+    "build-site:build-css": "src/site/scss/**/*.*"
   },
   "repository": {
     "type": "git",

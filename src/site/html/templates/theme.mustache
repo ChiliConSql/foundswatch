@@ -73,12 +73,14 @@
         </div>
     </div>
 
-    <div class="grid-container" style="padding-top: 3.5rem;">
+    <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <h1>{{name}}</h1>
-                <h4>{{tagline}}</h4>
+                <p class="lead">{{tagline}}</p>
             </div>
+        </div>
+        <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Top Bar -->
                 <h2>Navigation Bars</h2>
@@ -142,6 +144,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Controls -->
                 <h2>Controls</h2>
@@ -316,7 +320,7 @@
                                                     <span class="show-for-sr">Small Switch</span>
                                                 </label>
                                             </div>
-                                            
+
                                             <div class="switch tiny">
                                                 <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch4">
                                                 <label class="switch-paddle" for="tinySwitch">
@@ -335,7 +339,7 @@
                                                     <span class="switch-inactive" aria-hidden="true">Off</span>
                                                 </label>
                                             </div>
-                                            
+
                                             <div class="switch large">
                                                 <input class="switch-input" id="on-off2" type="checkbox" name="exampleSwitch6">
                                                 <label class="switch-paddle" for="on-off2">
@@ -411,863 +415,875 @@
                 </div>
             </div>
         </div>
-        <div class="cell">
-            <!-- Typography -->
-            <h2>Typography</h2>
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-4">
-                    <h3>Headings</h3>
-                    <div class="zf-code-reveal">
-                        <h1>Heading 1</h1>
-                        <h2>Heading 2</h2>
-                        <h3>Heading 3</h3>
-                        <h4>Heading 4</h4>
-                        <h5>Heading 5</h5>
-                        <h6>Heading 6</h6>
-                    </div>
-                    <div class="zf-code-reveal">
-                        <h3>Heading
-                            <small>with small segment</small>
-                        </h3>
-                        <h4 class="subheader">Subheader text</h4>
-                        <p class="lead">This is lead text.</p>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <h3>Paragraphs</h3>
-                    <div class="zf-code-reveal">
-                        <p>This is an example of a paragraph of text. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Hic quasi expedita distinctio amet laboriosam rerum quaerat nulla. Unde porro nemo sint mollitia
-                            in atque, corrupti aut, dignissimos molestiae reiciendis deleniti!</p>
-                        <hr>
-                    </div>
-                    <div class="zf-code-reveal">
-                        <p>The following text is
-                            <strong>formatted as strong</strong>.</p>
-                        <p>The following text is
-                            <em>formatted as emphasized</em>.</p>
-                        <p>The following text is
-                            <a href="#0">a hyperlink</a>.</p>
-                        <p>The following text is abbreviated:
-                            <abbr title="Hypertext Markup Language">HTML</abbr>
-                        </p>
-                        <p>The following text has a tooltip:
-                            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" title="Cascading Style Sheets">CSS</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <h3>Lists</h3>
-                    <h4>Unordered</h4>
-                    <div class="zf-code-reveal">
-                        <ul>
-                            <li>List item</li>
-                            <li>List item
-                                <ul>
-                                    <li>Nested list item</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <h4>Ordered</h4>
-                    <div class="zf-code-reveal">
-                        <ol>
-                            <li>List item</li>
-                            <li>List item
-                                <ol>
-                                    <li>Nested list item</li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </div>
-                    <h4>Definition</h4>
-                    <div class="zf-code-reveal">
-                        <dl>
-                            <dt>First term</dt>
-                            <dd>This is the description of the first term</dd>
-                            <dt>Second term</dt>
-                            <dd>This is the description of the second term</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-4">
-                    <h3>Statistics</h3>
-                    <div class="zf-code-reveal">
-                        <p>The following is formatted as a statistic:</p>
-                        <div class="stat">42</div>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <h3>Code</h3>
-                    <div class="zf-code-reveal">
-                        <p>The following is code:
-                            <code>&lt;div&gt;</code>
-                        </p>
-                        <pre>
-This is preformatted text.
-</pre>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <h3>Keystrokes</h3>
-                    <div class="zf-code-reveal">
-                        <p>Press
-                            <kbd>Cmd+C</kbd> (or
-                            <kbd>Ctrl+C</kbd> on Windows) to copy text.</p>
-                    </div>
-                </div>
-            </div>
-            <h3>Blockquotes</h3>
-            <div class="zf-code-reveal">
-                <!--REVEAL-CODE
-            <div class="grid-container">
-                REVEAL-CODE-->
+
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <!-- Typography -->
+                <h2>Typography</h2>
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-4">
-                        <blockquote class="text-left">
-                            &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
-                            <cite>Quotable Person</cite>
-                        </blockquote>
+                        <h3>Headings</h3>
+                        <div class="zf-code-reveal">
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                            <h4>Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <h6>Heading 6</h6>
+                        </div>
+                        <div class="zf-code-reveal">
+                            <h3>Heading
+                                <small>with small segment</small>
+                            </h3>
+                            <h4 class="subheader">Subheader text</h4>
+                            <p class="lead">This is lead text.</p>
+                        </div>
                     </div>
                     <div class="cell medium-4">
-                        <blockquote class="text-center">
-                            &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
-                            <cite>Quotable Person</cite>
-                        </blockquote>
+                        <h3>Paragraphs</h3>
+                        <div class="zf-code-reveal">
+                            <p>This is an example of a paragraph of text. Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Hic quasi expedita distinctio amet laboriosam rerum quaerat nulla. Unde porro nemo
+                                sint mollitia in atque, corrupti aut, dignissimos molestiae reiciendis deleniti!</p>
+                            <hr>
+                        </div>
+                        <div class="zf-code-reveal">
+                            <p>The following text is
+                                <strong>formatted as strong</strong>.</p>
+                            <p>The following text is
+                                <em>formatted as emphasized</em>.</p>
+                            <p>The following text is
+                                <a href="#0">a hyperlink</a>.</p>
+                            <p>The following text is abbreviated:
+                                <abbr title="Hypertext Markup Language">HTML</abbr>
+                            </p>
+                            <p>The following text has a tooltip:
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" title="Cascading Style Sheets">CSS</span>
+                            </p>
+                        </div>
                     </div>
                     <div class="cell medium-4">
-                        <blockquote class="text-right">
-                            &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
-                            <cite>Quotable Person</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <!--REVEAL-CODE
-            </div>
-                REVEAL-CODE-->
-            </div>
-        </div>
-        <div class="cell">
-            <!-- Tables -->
-            <h2>Tables</h2>
-            <div class="zf-code-reveal">
-                <table>
-                    <thead>
-                        <tr>
-                            <th width="210">Column Header 1</th>
-                            <th>Column Header 2</th>
-                            <th width="160">Column Header 3</th>
-                            <th width="180">Column Header 4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Table data</td>
-                            <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            <td>More table data</td>
-                            <td>This is even more table data</td>
-                        </tr>
-                        <tr>
-                            <td>Table data</td>
-                            <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            <td>More table data</td>
-                            <td>This is even more table data</td>
-                        </tr>
-                        <tr>
-                            <td>Table data</td>
-                            <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            <td>More table data</td>
-                            <td>This is even more table data</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="cell">
-            <!-- Forms -->
-            <h2>Forms</h2>
-            <div class="zf-code-reveal">
-                <form>
-                    <div class="grid-x grid-margin-x">
-                        <div class="cell medium-6">
-                            <label>Text Input
-                                <input type="text" placeholder="Placeholder" aria-describedby="textInputExample">
-                            </label>
-                            <p class="help-text" id="textInputExample">Help text for how to use this input field</p>
-                            <label>Disabled Text Input
-                                <input type="text" placeholder="Placeholder" disabled>
-                            </label>
-                            <label>
-                                Number Input
-                                <input type="number" value="123">
-                            </label>
-                            <label>Email Input
-                                <input type="email" placeholder="email@example.com">
-                            </label>
-                            <label>Password Input
-                                <input type="password">
-                            </label>
-                            <label for="exampleFileUpload" class="button">Upload File</label>
-                            <input type="file" id="exampleFileUpload" class="show-for-sr">
-                            <input type="submit" class="button" value="Submit">
-                        </div>
-                        <div class="cell medium-6">
-                            <label>
-                                Text Area
-                                <textarea placeholder="Text area placeholder"></textarea>
-                            </label>
-                            <div class="grid-x grid-margin-x">
-                                <div class="cell small-3">
-                                    <label for="middle-label" class="text-right middle">Label</label>
-                                </div>
-                                <div class="cell small-9">
-                                    <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <span class="input-group-label">$</span>
-                                <input class="input-group-field" type="url">
-                                <div class="input-group-button">
-                                    <input type="submit" class="button" value="Submit">
-                                </div>
-                            </div>
-                            <label>
-                                Select Menu
-                                <select>
-                                    <option value="item1">Item 1</option>
-                                    <option value="item2">Item 2</option>
-                                    <option value="item3">Item 3</option>
-                                </select>
-                            </label>
-                            <fieldset>
-                                <legend>Radio Buttons</legend>
-                                <input type="radio" name="radiofields" value="A" id="radiofieldsA" required>
-                                <label for="radiofieldsA">Option A</label>
-                                <input type="radio" name="radiofields" value="B" id="radiofieldsB">
-                                <label for="radiofieldsB">Option B</label>
-                                <input type="radio" name="radiofields" value="C" id="radiofieldsC">
-                                <label for="radiofieldsC">Option C</label>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Checkboxes</legend>
-                                <input id="checkbox1" type="checkbox">
-                                <label for="checkbox1">Checkbox 1</label>
-                                <input id="checkbox2" type="checkbox">
-                                <label for="checkbox2">Checkbox 2</label>
-                                <input id="checkbox3" type="checkbox">
-                                <label for="checkbox3">Checkbox 3</label>
-                            </fieldset>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="cell">
-            <!-- Navigation -->
-            <h2>Navigation</h2>
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-6">
-                    <h3>Menu</h3>
-                    <div class="zf-code-reveal">
-                        <ul class="menu">
-                            <li>
-                                <a href="#0">
-                                    <i class="fi-list"></i>
-                                    <span>One</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    <i class="fi-list"></i>
-                                    <span>Two</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    <i class="fi-list"></i>
-                                    <span>Three</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    <i class="fi-list"></i>
-                                    <span>Four</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="cell medium-6">
-                    <h3>Dropdown Menu</h3>
-                    <div class="zf-code-reveal">
-                        <ul class="dropdown menu" data-dropdown-menu>
-                            <li>
-                                <a>Item 1</a>
-                                <ul class="menu">
-                                    <li>
-                                        <a href="#0">Item 1 with some text</a>
-                                    </li>
-                                    <li>
-                                        <a href='#0'>Item 2</a>
-                                        <ul class="menu">
-                                            <li>
-                                                <a href='#0'>Item 2-1</a>
-                                            </li>
-                                            <li>
-                                                <a href='#0'>Item 2-2</a>
-                                            </li>
-                                            <li>
-                                                <a href='#0'>Item 2-3</a>
-                                                <ul class="menu">
-                                                    <li>
-                                                        <a href='#0'>Item 2-3-1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='#0'>Item 2-3-2</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href='#0'> Item 2-4</a>
-                                                <ul class="menu">
-                                                    <li>
-                                                        <a href='#0'>Item 2-4-1</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#0">Item 2</a>
-                                <ul class="menu">
-                                    <li>
-                                        <a href="#0">Item 2-1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 2-2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#0">Item 3</a>
-                            </li>
-                            <li>
-                                <a href='#0'>Item 4</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-6">
-                    <h3>Tabs</h3>
-                    <div class="zf-code-reveal">
-                        <ul class="tabs" data-tabs id="example-tabs">
-                            <li class="tabs-title is-active">
-                                <a href="#panel1" aria-selected="true">Tab 1</a>
-                            </li>
-                            <li class="tabs-title">
-                                <a href="#panel2">Tab 2</a>
-                            </li>
-                            <li class="tabs-title">
-                                <a href="#panel3">Tab 3</a>
-                            </li>
-                            <li class="tabs-title">
-                                <a href="#panel4">Tab 4</a>
-                            </li>
-                            <li class="tabs-title">
-                                <a href="#panel5">Tab 5</a>
-                            </li>
-                            <li class="tabs-title">
-                                <a href="#panel6">Tab 6</a>
-                            </li>
-                        </ul>
-
-                        <div class="tabs-content" data-tabs-content="example-tabs">
-                            <div class="tabs-panel is-active" id="panel1">
-                                <p>Panel one</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe illum accusamus consequuntur
-                                    possimus voluptatibus? Veniam maxime nam aliquam est omnis provident animi minima ut!
-                                    Atque provident veritatis delectus sed mollitia!</p>
-                                <p>Saepe illum accusamus consequuntur possimus voluptatibus? Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Veniam maxime nam aliquam est omnis provident animi minima ut! Atque
-                                    provident veritatis delectus sed mollitia!</p>
-                                <p>Consectetur adipisicing elit, lorem ipsum dolor sit amet. Saepe illum accusamus consequuntur
-                                    possimus voluptatibus?</p>
-                            </div>
-                            <div class="tabs-panel" id="panel2">
-                                <p>Panel two</p>
-                                <img class="thumbnail" src="https://placeimg.com/230/230/tech">
-                            </div>
-                            <div class="tabs-panel" id="panel3">
-                                <p>Panel three</p>
-                                <p>This is the text inside of panel three.</p>
-                            </div>
-                            <div class="tabs-panel" id="panel4">
-                                <p>Panel four</p>
-                                <img class="thumbnail" src="https://placeimg.com/1044/624/people">
-                            </div>
-                            <div class="tabs-panel" id="panel5">
-                                <p>Panel five</p>
-                                <p>This is the text inside of panel five.</p>
-                            </div>
-                            <div class="tabs-panel" id="panel6">
-                                <p>Six</p>
-                                <img class="thumbnail" src="https://placeimg.com/1044/590/nature">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell medium-6">
-                    <h3>Accordion Menu</h3>
-                    <div class="zf-code-reveal">
-                        <ul class="vertical menu" data-accordion-menu>
-                            <li>
-                                <a href="#0">Item 1</a>
-                                <ul class="menu vertical nested is-active">
-                                    <li>
-                                        <a href="#0">Item 1-1</a>
-                                        <ul class="menu vertical nested">
-                                            <li>
-                                                <a href="#0">Item 1-1-1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Item 1-1-2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Item 1-1-3</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 1-2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 1-3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#0">Item 2</a>
-                                <ul class="menu vertical nested">
-                                    <li>
-                                        <a href="#0">Item 2-1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 2-2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#0">Item 3</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3>Drilldown Menu</h3>
-                    <div class="zf-code-reveal">
-                        <ul class="vertical menu" data-drilldown style="width: 200px" id="m1">
-                            <li>
-                                <a href="#0">Item 1</a>
-                                <ul class="vertical menu" id="m2">
-                                    <li>
-                                        <a href="#0">Item 1-1</a>
-                                        <ul class="vertical menu" id="m3">
-                                            <li>
-                                                <a href="#0">Item 1-1-1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Item 1-1-2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Item 1-1-3</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Item 1-1-4</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Item 1-1-5</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 1-2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 1-3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 1-4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 1-5</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#0">Item 2</a>
-                                <ul class="vertical menu">
-                                    <li>
-                                        <a href="#0">Item 2-1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 2-2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 2-3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 2-4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 2-5</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#0">Item 3</a>
-                                <ul class="vertical menu">
-                                    <li>
-                                        <a href="#0">Item 3-1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 3-2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 3-3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 3-4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">Item 3-5</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href='#0'> Item 4</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-6">
-                    <h3>Breadcrumbs</h3>
-                    <div class="zf-code-reveal">
-                        <nav aria-label="You are here:" role="navigation">
-                            <ul class="breadcrumbs">
-                                <li>
-                                    <a href="#0">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#0">Subsection</a>
-                                </li>
-                                <li class="disabled">Disabled</li>
-                                <li>
-                                    <span class="show-for-sr">Current: </span> Current
+                        <h3>Lists</h3>
+                        <h4>Unordered</h4>
+                        <div class="zf-code-reveal">
+                            <ul>
+                                <li>List item</li>
+                                <li>List item
+                                    <ul>
+                                        <li>Nested list item</li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </nav>
+                        </div>
+                        <h4>Ordered</h4>
+                        <div class="zf-code-reveal">
+                            <ol>
+                                <li>List item</li>
+                                <li>List item
+                                    <ol>
+                                        <li>Nested list item</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                        <h4>Definition</h4>
+                        <div class="zf-code-reveal">
+                            <dl>
+                                <dt>First term</dt>
+                                <dd>This is the description of the first term</dd>
+                                <dt>Second term</dt>
+                                <dd>This is the description of the second term</dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
-                <div class="cell medium-6">
-                    <h3>Pagination</h3>
-                    <div class="zf-code-reveal">
-                        <ul class="pagination" role="navigation" aria-label="Pagination">
-                            <li class="disabled">Previous
-                                <span class="show-for-sr">page</span>
-                            </li>
-                            <li class="current">
-                                <span class="show-for-sr">You're on page</span> 1</li>
-                            <li>
-                                <a href="#0" aria-label="Page 2">2</a>
-                            </li>
-                            <li>
-                                <a href="#0" aria-label="Page 3">3</a>
-                            </li>
-                            <li>
-                                <a href="#0" aria-label="Page 4">4</a>
-                            </li>
-                            <li class="ellipsis" aria-hidden="true"></li>
-                            <li>
-                                <a href="#0" aria-label="Page 12">12</a>
-                            </li>
-                            <li>
-                                <a href="#0" aria-label="Page 13">13</a>
-                            </li>
-                            <li>
-                                <a href="#0" aria-label="Next page">Next
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-4">
+                        <h3>Statistics</h3>
+                        <div class="zf-code-reveal">
+                            <p>The following is formatted as a statistic:</p>
+                            <div class="stat">42</div>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <h3>Code</h3>
+                        <div class="zf-code-reveal">
+                            <p>The following is code:
+                                <code>&lt;div&gt;</code>
+                            </p>
+                            <pre>
+This is preformatted text.
+</pre>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <h3>Keystrokes</h3>
+                        <div class="zf-code-reveal">
+                            <p>Press
+                                <kbd>Cmd+C</kbd> (or
+                                <kbd>Ctrl+C</kbd> on Windows) to copy text.</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Blockquotes</h3>
+                <div class="zf-code-reveal">
+                    <!--REVEAL-CODE
+            <div class="grid-container">
+                REVEAL-CODE-->
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell medium-4">
+                            <blockquote class="text-left">
+                                &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
+                                <cite>Quotable Person</cite>
+                            </blockquote>
+                        </div>
+                        <div class="cell medium-4">
+                            <blockquote class="text-center">
+                                &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
+                                <cite>Quotable Person</cite>
+                            </blockquote>
+                        </div>
+                        <div class="cell medium-4">
+                            <blockquote class="text-right">
+                                &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
+                                <cite>Quotable Person</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!--REVEAL-CODE
+            </div>
+                REVEAL-CODE-->
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <!-- Tables -->
+                <h2>Tables</h2>
+                <div class="zf-code-reveal">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="210">Column Header 1</th>
+                                <th>Column Header 2</th>
+                                <th width="160">Column Header 3</th>
+                                <th width="180">Column Header 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Table data</td>
+                                <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                <td>More table data</td>
+                                <td>This is even more table data</td>
+                            </tr>
+                            <tr>
+                                <td>Table data</td>
+                                <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                <td>More table data</td>
+                                <td>This is even more table data</td>
+                            </tr>
+                            <tr>
+                                <td>Table data</td>
+                                <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                <td>More table data</td>
+                                <td>This is even more table data</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <!-- Forms -->
+                <h2>Forms</h2>
+                <div class="zf-code-reveal">
+                    <form>
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell medium-6">
+                                <label>Text Input
+                                    <input type="text" placeholder="Placeholder" aria-describedby="textInputExample">
+                                </label>
+                                <p class="help-text" id="textInputExample">Help text for how to use this input field</p>
+                                <label>Disabled Text Input
+                                    <input type="text" placeholder="Placeholder" disabled>
+                                </label>
+                                <label>
+                                    Number Input
+                                    <input type="number" value="123">
+                                </label>
+                                <label>Email Input
+                                    <input type="email" placeholder="email@example.com">
+                                </label>
+                                <label>Password Input
+                                    <input type="password">
+                                </label>
+                                <label for="exampleFileUpload" class="button">Upload File</label>
+                                <input type="file" id="exampleFileUpload" class="show-for-sr">
+                                <input type="submit" class="button" value="Submit">
+                            </div>
+                            <div class="cell medium-6">
+                                <label>
+                                    Text Area
+                                    <textarea placeholder="Text area placeholder"></textarea>
+                                </label>
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell small-3">
+                                        <label for="middle-label" class="text-right middle">Label</label>
+                                    </div>
+                                    <div class="cell small-9">
+                                        <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-label">$</span>
+                                    <input class="input-group-field" type="url">
+                                    <div class="input-group-button">
+                                        <input type="submit" class="button" value="Submit">
+                                    </div>
+                                </div>
+                                <label>
+                                    Select Menu
+                                    <select>
+                                        <option value="item1">Item 1</option>
+                                        <option value="item2">Item 2</option>
+                                        <option value="item3">Item 3</option>
+                                    </select>
+                                </label>
+                                <fieldset>
+                                    <legend>Radio Buttons</legend>
+                                    <input type="radio" name="radiofields" value="A" id="radiofieldsA" required>
+                                    <label for="radiofieldsA">Option A</label>
+                                    <input type="radio" name="radiofields" value="B" id="radiofieldsB">
+                                    <label for="radiofieldsB">Option B</label>
+                                    <input type="radio" name="radiofields" value="C" id="radiofieldsC">
+                                    <label for="radiofieldsC">Option C</label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Checkboxes</legend>
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">Checkbox 1</label>
+                                    <input id="checkbox2" type="checkbox">
+                                    <label for="checkbox2">Checkbox 2</label>
+                                    <input id="checkbox3" type="checkbox">
+                                    <label for="checkbox3">Checkbox 3</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <!-- Navigation -->
+                <h2>Navigation</h2>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-6">
+                        <h3>Menu</h3>
+                        <div class="zf-code-reveal">
+                            <ul class="menu">
+                                <li>
+                                    <a href="#0">
+                                        <i class="fi-list"></i>
+                                        <span>One</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        <i class="fi-list"></i>
+                                        <span>Two</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        <i class="fi-list"></i>
+                                        <span>Three</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        <i class="fi-list"></i>
+                                        <span>Four</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cell medium-6">
+                        <h3>Dropdown Menu</h3>
+                        <div class="zf-code-reveal">
+                            <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                    <a>Item 1</a>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#0">Item 1 with some text</a>
+                                        </li>
+                                        <li>
+                                            <a href='#0'>Item 2</a>
+                                            <ul class="menu">
+                                                <li>
+                                                    <a href='#0'>Item 2-1</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#0'>Item 2-2</a>
+                                                </li>
+                                                <li>
+                                                    <a href='#0'>Item 2-3</a>
+                                                    <ul class="menu">
+                                                        <li>
+                                                            <a href='#0'>Item 2-3-1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='#0'>Item 2-3-2</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href='#0'> Item 2-4</a>
+                                                    <ul class="menu">
+                                                        <li>
+                                                            <a href='#0'>Item 2-4-1</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#0">Item 2</a>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#0">Item 2-1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 2-2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#0">Item 3</a>
+                                </li>
+                                <li>
+                                    <a href='#0'>Item 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-6">
+                        <h3>Tabs</h3>
+                        <div class="zf-code-reveal">
+                            <ul class="tabs" data-tabs id="example-tabs">
+                                <li class="tabs-title is-active">
+                                    <a href="#panel1" aria-selected="true">Tab 1</a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel2">Tab 2</a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel3">Tab 3</a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel4">Tab 4</a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel5">Tab 5</a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel6">Tab 6</a>
+                                </li>
+                            </ul>
+
+                            <div class="tabs-content" data-tabs-content="example-tabs">
+                                <div class="tabs-panel is-active" id="panel1">
+                                    <p>Panel one</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe illum accusamus consequuntur
+                                        possimus voluptatibus? Veniam maxime nam aliquam est omnis provident animi minima
+                                        ut! Atque provident veritatis delectus sed mollitia!</p>
+                                    <p>Saepe illum accusamus consequuntur possimus voluptatibus? Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Veniam maxime nam aliquam est omnis provident animi
+                                        minima ut! Atque provident veritatis delectus sed mollitia!</p>
+                                    <p>Consectetur adipisicing elit, lorem ipsum dolor sit amet. Saepe illum accusamus consequuntur
+                                        possimus voluptatibus?</p>
+                                </div>
+                                <div class="tabs-panel" id="panel2">
+                                    <p>Panel two</p>
+                                    <img class="thumbnail" src="https://placeimg.com/230/230/tech">
+                                </div>
+                                <div class="tabs-panel" id="panel3">
+                                    <p>Panel three</p>
+                                    <p>This is the text inside of panel three.</p>
+                                </div>
+                                <div class="tabs-panel" id="panel4">
+                                    <p>Panel four</p>
+                                    <img class="thumbnail" src="https://placeimg.com/1044/624/people">
+                                </div>
+                                <div class="tabs-panel" id="panel5">
+                                    <p>Panel five</p>
+                                    <p>This is the text inside of panel five.</p>
+                                </div>
+                                <div class="tabs-panel" id="panel6">
+                                    <p>Six</p>
+                                    <img class="thumbnail" src="https://placeimg.com/1044/590/nature">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-6">
+                        <h3>Accordion Menu</h3>
+                        <div class="zf-code-reveal">
+                            <ul class="vertical menu" data-accordion-menu>
+                                <li>
+                                    <a href="#0">Item 1</a>
+                                    <ul class="menu vertical nested is-active">
+                                        <li>
+                                            <a href="#0">Item 1-1</a>
+                                            <ul class="menu vertical nested">
+                                                <li>
+                                                    <a href="#0">Item 1-1-1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#0">Item 1-1-2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#0">Item 1-1-3</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 1-2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 1-3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#0">Item 2</a>
+                                    <ul class="menu vertical nested">
+                                        <li>
+                                            <a href="#0">Item 2-1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 2-2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#0">Item 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>Drilldown Menu</h3>
+                        <div class="zf-code-reveal">
+                            <ul class="vertical menu" data-drilldown style="width: 200px" id="m1">
+                                <li>
+                                    <a href="#0">Item 1</a>
+                                    <ul class="vertical menu" id="m2">
+                                        <li>
+                                            <a href="#0">Item 1-1</a>
+                                            <ul class="vertical menu" id="m3">
+                                                <li>
+                                                    <a href="#0">Item 1-1-1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#0">Item 1-1-2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#0">Item 1-1-3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#0">Item 1-1-4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#0">Item 1-1-5</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 1-2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 1-3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 1-4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 1-5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#0">Item 2</a>
+                                    <ul class="vertical menu">
+                                        <li>
+                                            <a href="#0">Item 2-1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 2-2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 2-3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 2-4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 2-5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#0">Item 3</a>
+                                    <ul class="vertical menu">
+                                        <li>
+                                            <a href="#0">Item 3-1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 3-2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 3-3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 3-4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Item 3-5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href='#0'> Item 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-6">
+                        <h3>Breadcrumbs</h3>
+                        <div class="zf-code-reveal">
+                            <nav aria-label="You are here:" role="navigation">
+                                <ul class="breadcrumbs">
+                                    <li>
+                                        <a href="#0">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">Subsection</a>
+                                    </li>
+                                    <li class="disabled">Disabled</li>
+                                    <li>
+                                        <span class="show-for-sr">Current: </span> Current
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="cell medium-6">
+                        <h3>Pagination</h3>
+                        <div class="zf-code-reveal">
+                            <ul class="pagination" role="navigation" aria-label="Pagination">
+                                <li class="disabled">Previous
                                     <span class="show-for-sr">page</span>
-                                </a>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="current">
+                                    <span class="show-for-sr">You're on page</span> 1</li>
+                                <li>
+                                    <a href="#0" aria-label="Page 2">2</a>
+                                </li>
+                                <li>
+                                    <a href="#0" aria-label="Page 3">3</a>
+                                </li>
+                                <li>
+                                    <a href="#0" aria-label="Page 4">4</a>
+                                </li>
+                                <li class="ellipsis" aria-hidden="true"></li>
+                                <li>
+                                    <a href="#0" aria-label="Page 12">12</a>
+                                </li>
+                                <li>
+                                    <a href="#0" aria-label="Page 13">13</a>
+                                </li>
+                                <li>
+                                    <a href="#0" aria-label="Next page">Next
+                                        <span class="show-for-sr">page</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cell">
-            <!-- Indicators -->
-            <h2>Indicators</h2>
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <!-- Indicators -->
+                <h2>Indicators</h2>
 
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-6">
-                    <h3>Badges</h3>
-                    <div class="zf-code-reveal">
-                        <span class="primary badge">1</span>
-                        <span class="secondary badge">2</span>
-                        <span class="success badge">S</span>
-                        <span class="warning badge">W</span>
-                        <span class="alert badge">A</span>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-6">
+                        <h3>Badges</h3>
+                        <div class="zf-code-reveal">
+                            <span class="primary badge">1</span>
+                            <span class="secondary badge">2</span>
+                            <span class="success badge">S</span>
+                            <span class="warning badge">W</span>
+                            <span class="alert badge">A</span>
+                        </div>
+                    </div>
+                    <div class="cell medium-6">
+                        <h3>Labels</h3>
+                        <div class="zf-code-reveal">
+                            <span class="primary label">Primary</span>
+                            <span class="secondary label">Secondary</span>
+                            <span class="success label">Success</span>
+                            <span class="warning label">Warning</span>
+                            <span class="alert label">Alert</span>
+                        </div>
                     </div>
                 </div>
-                <div class="cell medium-6">
-                    <h3>Labels</h3>
-                    <div class="zf-code-reveal">
-                        <span class="primary label">Primary</span>
-                        <span class="secondary label">Secondary</span>
-                        <span class="success label">Success</span>
-                        <span class="warning label">Warning</span>
-                        <span class="alert label">Alert</span>
+
+                <h3>Progress Bars</h3>
+
+                <h4>Without Text</h4>
+                <div class="zf-code-reveal">
+                    <div class="progress" role="progressbar" aria-valuenow="17" aria-valuetext="17 percent" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-meter" style="width: 17%"></div>
+                    </div>
+                    <div class="secondary progress" role="progressbar" aria-valuenow="33" aria-valuetext="33 percent" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-meter" style="width: 33%"></div>
+                    </div>
+                    <div class="success progress" role="progressbar" aria-valuenow="50" aria-valuetext="50 percent" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-meter" style="width: 50%"></div>
+                    </div>
+                    <div class="warning progress" role="progressbar" aria-valuenow="67" aria-valuetext="67 percent" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-meter" style="width: 67%"></div>
+                    </div>
+                    <div class="alert progress" role="progressbar" aria-valuenow="83" aria-valuetext="83 percent" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-meter" style="width: 83%"></div>
                     </div>
                 </div>
-            </div>
-
-            <h3>Progress Bars</h3>
-
-            <h4>Without Text</h4>
-            <div class="zf-code-reveal">
-                <div class="progress" role="progressbar" aria-valuenow="17" aria-valuetext="17 percent" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-meter" style="width: 17%"></div>
-                </div>
-                <div class="secondary progress" role="progressbar" aria-valuenow="33" aria-valuetext="33 percent" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-meter" style="width: 33%"></div>
-                </div>
-                <div class="success progress" role="progressbar" aria-valuenow="50" aria-valuetext="50 percent" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-meter" style="width: 50%"></div>
-                </div>
-                <div class="warning progress" role="progressbar" aria-valuenow="67" aria-valuetext="67 percent" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-meter" style="width: 67%"></div>
-                </div>
-                <div class="alert progress" role="progressbar" aria-valuenow="83" aria-valuetext="83 percent" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-meter" style="width: 83%"></div>
-                </div>
-            </div>
-            <h4>With Text</h4>
-            <div class="zf-code-reveal">
-                <div class="progress" role="progressbar" aria-valuenow="17" aria-valuetext="17 percent" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-meter" style="width: 17%">
-                        <p class="progress-meter-text">Loading...</p>
-                    </span>
-                </div>
-                <div class="secondary progress" role="progressbar" aria-valuenow="33" aria-valuetext="33 percent" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-meter" style="width: 33%">
-                        <p class="progress-meter-text">33%</p>
-                    </span>
-                </div>
-                <div class="success progress" role="progressbar" aria-valuenow="50" aria-valuetext="50 percent" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-meter" style="width: 50%">
-                        <p class="progress-meter-text">Progress: 50%</p>
-                    </span>
-                </div>
-                <div class="warning progress" role="progressbar" aria-valuenow="67" aria-valuetext="67 percent" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-meter" style="width: 67%">
-                        <p class="progress-meter-text">67% Complete</p>
-                    </span>
-                </div>
-                <div class="alert progress" role="progressbar" aria-valuenow="83" aria-valuetext="83 percent" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-meter" style="width: 83%">
-                        <p class="progress-meter-text">Almost done... (83%)</p>
-                    </span>
+                <h4>With Text</h4>
+                <div class="zf-code-reveal">
+                    <div class="progress" role="progressbar" aria-valuenow="17" aria-valuetext="17 percent" aria-valuemin="0" aria-valuemax="100">
+                        <span class="progress-meter" style="width: 17%">
+                            <p class="progress-meter-text">Loading...</p>
+                        </span>
+                    </div>
+                    <div class="secondary progress" role="progressbar" aria-valuenow="33" aria-valuetext="33 percent" aria-valuemin="0" aria-valuemax="100">
+                        <span class="progress-meter" style="width: 33%">
+                            <p class="progress-meter-text">33%</p>
+                        </span>
+                    </div>
+                    <div class="success progress" role="progressbar" aria-valuenow="50" aria-valuetext="50 percent" aria-valuemin="0" aria-valuemax="100">
+                        <span class="progress-meter" style="width: 50%">
+                            <p class="progress-meter-text">Progress: 50%</p>
+                        </span>
+                    </div>
+                    <div class="warning progress" role="progressbar" aria-valuenow="67" aria-valuetext="67 percent" aria-valuemin="0" aria-valuemax="100">
+                        <span class="progress-meter" style="width: 67%">
+                            <p class="progress-meter-text">67% Complete</p>
+                        </span>
+                    </div>
+                    <div class="alert progress" role="progressbar" aria-valuenow="83" aria-valuetext="83 percent" aria-valuemin="0" aria-valuemax="100">
+                        <span class="progress-meter" style="width: 83%">
+                            <p class="progress-meter-text">Almost done... (83%)</p>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="cell">
-            <!-- Containers -->
-            <h2>Containers</h2>
-            <h3>Accordions</h3>
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <!-- Containers -->
+                <h2>Containers</h2>
+                <h3>Accordions</h3>
 
-            <div class="zf-code-reveal">
-                <ul class="accordion" data-accordion>
-                    <li class="accordion-item is-active" data-accordion-item>
-                        <a href="#0" class="accordion-title">Accordion 1</a>
-                        <div class="accordion-content" data-tab-content>
-                            <p>These are the contents of the first accordion panel</p>
-                            <a href="#0">This is a link inside the accordion panel</a>
-                        </div>
-                    </li>
-                    <li class="accordion-item" data-accordion-item>
-                        <a href="#0" class="accordion-title">Accordion 2</a>
-                        <div class="accordion-content" data-tab-content>
-                            <textarea>Text area inside accordion</textarea>
-                            <div class="button">Button</div>
-                        </div>
-                    </li>
-                    <li class="accordion-item" data-accordion-item>
-                        <a href="#0" class="accordion-title">Accordion 3</a>
-                        <div class="accordion-content" data-tab-content>
-                            Text input inside accordion
-                            <input type="text" placeholder="Placeholder"></input>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <h3>Callouts</h3>
+                <div class="zf-code-reveal">
+                    <ul class="accordion" data-accordion>
+                        <li class="accordion-item is-active" data-accordion-item>
+                            <a href="#0" class="accordion-title">Accordion 1</a>
+                            <div class="accordion-content" data-tab-content>
+                                <p>These are the contents of the first accordion panel</p>
+                                <a href="#0">This is a link inside the accordion panel</a>
+                            </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                            <a href="#0" class="accordion-title">Accordion 2</a>
+                            <div class="accordion-content" data-tab-content>
+                                <textarea>Text area inside accordion</textarea>
+                                <div class="button">Button</div>
+                            </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                            <a href="#0" class="accordion-title">Accordion 3</a>
+                            <div class="accordion-content" data-tab-content>
+                                Text input inside accordion
+                                <input type="text" placeholder="Placeholder"></input>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h3>Callouts</h3>
 
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-4">
-                    <div class="zf-code-reveal">
-                        <div class="callout" data-closable>
-                            <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h5>This is a default callout</h5>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-4">
+                        <div class="zf-code-reveal">
+                            <div class="callout" data-closable>
+                                <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5>This is a default callout</h5>
+                                <p>
+                                    <strong>Hey!</strong> This is paragraph text inside the default callout.</p>
+                                <a href="#0">This is a link inside the callout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <div class="zf-code-reveal">
+                            <div class="callout primary" data-closable>
+                                <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5>This is a primary callout</h5>
+                                <p>
+                                    <strong>Welcome!</strong> This is paragraph text inside the primary callout.</p>
+                                <a href="#0">This is a link inside the callout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <div class="zf-code-reveal">
+                            <div class="callout secondary" data-closable>
+                                <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5>This is a secondary callout</h5>
+                                <p>
+                                    <strong>Did you know?</strong> This is paragraph text inside the secondary callout.</p>
+                                <a href="#0">This is a link inside the callout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-4">
+                        <div class="zf-code-reveal">
+                            <div class="callout success" data-closable>
+                                <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5>This is a success callout</h5>
+                                <p>
+                                    <strong>Hooray!</strong> This is paragraph text inside the success callout.</p>
+                                <a href="#0">This is a link inside the callout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <div class="zf-code-reveal">
+                            <div class="callout warning" data-closable>
+                                <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5>This is a warning callout</h5>
+                                <p>
+                                    <strong>Be careful!</strong> This is paragraph text inside the warning callout.</p>
+                                <a href="#0">This is a link inside the callout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-4">
+                        <div class="zf-code-reveal">
+                            <div class="callout alert" data-closable>
+                                <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h5>This is an alert callout</h5>
+                                <p>
+                                    <strong>Whoops!</strong> This is paragraph text inside the alert callout.</p>
+                                <a href="#0">This is a link inside the callout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Cards</h3>
+
+                <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+                    <div class="cell">
+                        <div class="zf-code-reveal">
+                            <div class="card secondary">
+                                <div class="card-divider">
+                                    <h4>Heading text</h4>
+                                </div>
+                                <div class="card-section">
+                                    <p>This is a basic card with some text and dividers.</p>
+                                </div>
+                                <div class="card-divider">
+                                    <p>Divider text</p>
+                                </div>
+                                <div class="card-section">
+                                    <p>This is the last section in the card.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="zf-code-reveal">
+                            <div class="card">
+                                <div class="card-divider">
+                                    <h4>Heading text</h4>
+                                </div>
+                                <img src="https://placeimg.com/485/248/nature">
+                                <div class="card-section">
+                                    <p>This is a card with an image. Its heading is placed inside a divider.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="zf-code-reveal">
+                            <div class="card">
+                                <div class="card-section">
+                                    <img src="https://placeimg.com/485/248/tech">
+                                </div>
+                                <div class="card-section">
+                                    <p>This card's image is inside a card-section, giving it padding.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-margin-x">
+                    <div class="cell medium-3">
+                        <h3>Dropdown Panes</h3>
+
+                        <div class="zf-code-reveal">
+                            <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
+                            <div class="dropdown-pane" id="example-dropdown" data-dropdown>
+                                This is the dropdown pane content.
+                            </div>
+                        </div>
+
+                        <h3>Modals</h3>
+                        <div class="zf-code-reveal">
                             <p>
-                                <strong>Hey!</strong> This is paragraph text inside the default callout.</p>
-                            <a href="#0">This is a link inside the callout</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <div class="zf-code-reveal">
-                        <div class="callout primary" data-closable>
-                            <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h5>This is a primary callout</h5>
-                            <p>
-                                <strong>Welcome!</strong> This is paragraph text inside the primary callout.</p>
-                            <a href="#0">This is a link inside the callout</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <div class="zf-code-reveal">
-                        <div class="callout secondary" data-closable>
-                            <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h5>This is a secondary callout</h5>
-                            <p>
-                                <strong>Did you know?</strong> This is paragraph text inside the secondary callout.</p>
-                            <a href="#0">This is a link inside the callout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-4">
-                    <div class="zf-code-reveal">
-                        <div class="callout success" data-closable>
-                            <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h5>This is a success callout</h5>
-                            <p>
-                                <strong>Hooray!</strong> This is paragraph text inside the success callout.</p>
-                            <a href="#0">This is a link inside the callout</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <div class="zf-code-reveal">
-                        <div class="callout warning" data-closable>
-                            <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h5>This is a warning callout</h5>
-                            <p>
-                                <strong>Be careful!</strong> This is paragraph text inside the warning callout.</p>
-                            <a href="#0">This is a link inside the callout</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell medium-4">
-                    <div class="zf-code-reveal">
-                        <div class="callout alert" data-closable>
-                            <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h5>This is an alert callout</h5>
-                            <p>
-                                <strong>Whoops!</strong> This is paragraph text inside the alert callout.</p>
-                            <a href="#0">This is a link inside the callout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h3>Cards</h3>
-
-            <div class="grid-x grid-margin-x small-up-2 medium-up-3">
-                <div class="cell">
-                    <div class="zf-code-reveal">
-                        <div class="card secondary">
-                            <div class="card-divider">
-                                <h4>Heading text</h4>
-                            </div>
-                            <div class="card-section">
-                                <p>This is a basic card with some text and dividers.</p>
-                            </div>
-                            <div class="card-divider">
-                                <p>Divider text</p>
-                            </div>
-                            <div class="card-section">
-                                <p>This is the last section in the card.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="zf-code-reveal">
-                        <div class="card">
-                            <div class="card-divider">
-                                <h4>Heading text</h4>
-                            </div>
-                            <img src="https://placeimg.com/485/248/nature">
-                            <div class="card-section">
-                                <p>This is a card with an image. Its heading is placed inside a divider.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="zf-code-reveal">
-                        <div class="card">
-                            <div class="card-section">
-                                <img src="https://placeimg.com/485/248/tech">
-                            </div>
-                            <div class="card-section">
-                                <p>This card's image is inside a card-section, giving it padding.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid-x grid-margin-x">
-                <div class="cell medium-3">
-                    <h3>Dropdown Panes</h3>
-
-                    <div class="zf-code-reveal">
-                        <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
-                        <div class="dropdown-pane" id="example-dropdown" data-dropdown>
-                            This is the dropdown pane content.
-                        </div>
-                    </div>
-
-                    <h3>Modals</h3>
-                    <div class="zf-code-reveal">
-                        <p>
-                            <a data-open="modalDialog" class="button">Reveal Modal</a>
-                        </p>
-                        <!--REVEAL-CODE
+                                <a data-open="modalDialog" class="button">Reveal Modal</a>
+                            </p>
+                            <!--REVEAL-CODE
                         <div class="reveal" id="modalDialog" data-reveal>
                             <h1>Modal Dialog</h1>
                             <p class="lead">
@@ -1284,130 +1300,133 @@ This is preformatted text.
                             </button>
                         </div>
                         REVEAL-CODE-->
-                        <div class="reveal" id="modalDialog" data-reveal>
-                            <h1>Modal Dialog</h1>
-                            <p class="lead">
-                                <strong>This is strong lead text.</strong> You should now see the modal.</p>
-                            <p>This is a paragraph of text inside the modal dialog.</p>
-                            <p>And
-                                <a href="#0">this is a link</a> inside the modal dialog.</p>
-                            <p>
-                                <a class="button primary" href="#0" data-close aria-label="Close reveal">OK</a>
-                                <a class="button alert" href="#0" data-close aria-label="Close reveal">Cancel</a>
-                            </p>
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell medium-3">
-                    <h3>Thumbnails</h3>
-                    <div class="zf-code-reveal">
-                        <img class="thumbnail" style="cursor: pointer;" src="https://placeimg.com/200/200/animals" alt="Animal-related Photo" data-open="thumbModal">
-                        <div class="reveal" id="thumbModal" data-reveal>
-                            <h2>Full Image</h2>
-                            <img src="https://placeimg.com/800/600/animals" alt="Animal-related Photo">
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell medium-6">
-                    <h3>Media Objects</h3>
-                    <div class="zf-code-reveal">
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <img src="https://placeimg.com/200/200/people">
-                            </div>
-                            <div class="media-object-section">
-                                <h4>What is a media object?</h4>
-                                <p>Media objects are handy components that display an item, which is usually an image, next
-                                    to some content, which is usually some text. You can put lists, grids, and even other
-                                    media objects inside of them.</p>
+                            <div class="reveal" id="modalDialog" data-reveal>
+                                <h1>Modal Dialog</h1>
+                                <p class="lead">
+                                    <strong>This is strong lead text.</strong> You should now see the modal.</p>
+                                <p>This is a paragraph of text inside the modal dialog.</p>
+                                <p>And
+                                    <a href="#0">this is a link</a> inside the modal dialog.</p>
                                 <p>
-                                    <a href="#0">This is a link inside the media object</a>
+                                    <a class="button primary" href="#0" data-close aria-label="Close reveal">OK</a>
+                                    <a class="button alert" href="#0" data-close aria-label="Close reveal">Cancel</a>
                                 </p>
+                                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-3">
+                        <h3>Thumbnails</h3>
+                        <div class="zf-code-reveal">
+                            <img class="thumbnail" style="cursor: pointer;" src="https://placeimg.com/200/200/animals" alt="Animal-related Photo" data-open="thumbModal">
+                            <div class="reveal" id="thumbModal" data-reveal>
+                                <h2>Full Image</h2>
+                                <img src="https://placeimg.com/800/600/animals" alt="Animal-related Photo">
+                                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell medium-6">
+                        <h3>Media Objects</h3>
+                        <div class="zf-code-reveal">
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <img src="https://placeimg.com/200/200/people">
+                                </div>
+                                <div class="media-object-section">
+                                    <h4>What is a media object?</h4>
+                                    <p>Media objects are handy components that display an item, which is usually an image, next
+                                        to some content, which is usually some text. You can put lists, grids, and even other
+                                        media objects inside of them.</p>
+                                    <p>
+                                        <a href="#0">This is a link inside the media object</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <h3>Carousel (Orbit)</h3>
-            <div class="zf-code-reveal">
-                <div class="orbit" role="region" aria-label="Orbit Container" data-orbit>
-                    <ul class="orbit-container">
-                        <button class="orbit-previous" aria-label="previous">
-                            <span class="show-for-sr">Previous Slide</span>&#9664;</button>
-                        <button class="orbit-next" aria-label="next">
-                            <span class="show-for-sr">Next Slide</span>&#9654;</button>
-                        <li class="is-active orbit-slide">
-                            <div style="padding: 2rem 4rem; color: #fefefe; background: dodgerblue;">
-                                <p>
-                                    <strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="orbit-slide">
-                            <div style="padding: 2rem 4rem; color: #fefefe; background: rebeccapurple;">
-                                <p>
-                                    <strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p>
-                            </div>
-                        </li>
-                        <li class="orbit-slide">
-                            <div style="padding: 2rem 4rem; color: #fefefe; background: darkgoldenrod;">
-                                <p>
-                                    <strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p>
-                            </div>
-                        </li>
-                        <li class="orbit-slide">
-                            <div style="padding: 2rem 4rem; color: #fefefe; background: lightseagreen;">
-                                <p>
-                                    <strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <nav class="orbit-bullets">
-                        <button class="is-active" data-slide="0">
-                            <span class="show-for-sr">First slide details.</span>
-                            <span class="show-for-sr">Current Slide</span>
-                        </button>
-                        <button data-slide="1">
-                            <span class="show-for-sr">Second slide details.</span>
-                        </button>
-                        <button data-slide="2">
-                            <span class="show-for-sr">Third slide details.</span>
-                        </button>
-                        <button data-slide="3">
-                            <span class="show-for-sr">Fourth slide details.</span>
-                        </button>
-                    </nav>
+                <h3>Carousel (Orbit)</h3>
+                <div class="zf-code-reveal">
+                    <div class="orbit" role="region" aria-label="Orbit Container" data-orbit>
+                        <ul class="orbit-container">
+                            <button class="orbit-previous" aria-label="previous">
+                                <span class="show-for-sr">Previous Slide</span>&#9664;</button>
+                            <button class="orbit-next" aria-label="next">
+                                <span class="show-for-sr">Next Slide</span>&#9654;</button>
+                            <li class="is-active orbit-slide">
+                                <div style="padding: 2rem 4rem; color: #fefefe; background: dodgerblue;">
+                                    <p>
+                                        <strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="orbit-slide">
+                                <div style="padding: 2rem 4rem; color: #fefefe; background: rebeccapurple;">
+                                    <p>
+                                        <strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </li>
+                            <li class="orbit-slide">
+                                <div style="padding: 2rem 4rem; color: #fefefe; background: darkgoldenrod;">
+                                    <p>
+                                        <strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </li>
+                            <li class="orbit-slide">
+                                <div style="padding: 2rem 4rem; color: #fefefe; background: lightseagreen;">
+                                    <p>
+                                        <strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <nav class="orbit-bullets">
+                            <button class="is-active" data-slide="0">
+                                <span class="show-for-sr">First slide details.</span>
+                                <span class="show-for-sr">Current Slide</span>
+                            </button>
+                            <button data-slide="1">
+                                <span class="show-for-sr">Second slide details.</span>
+                            </button>
+                            <button data-slide="2">
+                                <span class="show-for-sr">Third slide details.</span>
+                            </button>
+                            <button data-slide="3">
+                                <span class="show-for-sr">Fourth slide details.</span>
+                            </button>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Close grid container -->
     <div class="reveal" id="codeRevealModal" data-reveal>
         <h4>Source Code</h4>
         <pre id="codeRevealHtmlTarget" contenteditable="true">
