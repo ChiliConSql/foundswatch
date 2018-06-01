@@ -76,14 +76,14 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell">
-                <h1>{{name}}</h1>
+                <h1 class="foundswatch">{{name}}</h1>
                 <p class="lead">{{tagline}}</p>
             </div>
         </div>
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Top Bar -->
-                <h2>Navigation Bars</h2>
+                <h2 class="foundswatch">Navigation Bars</h2>
                 <div class="grid-y grid-margin-y">
                     <div class="cell">
                         <div class="zf-code-reveal">
@@ -122,7 +122,7 @@
                                             <input type="search" placeholder="Search">
                                         </li>
                                         <li>
-                                            <button type="button" class="button">Search</button>
+                                            <button type="button" class="button secondary">Search</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -148,12 +148,12 @@
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Controls -->
-                <h2>Controls</h2>
+                <h2 class="foundswatch">Controls</h2>
 
-                <h3>Buttons</h3>
+                <h3 class="foundswatch">Buttons</h3>
 
                 <div class="grid-x grid-margin-x">
-                    <div class="cell small-6">
+                    <div class="cell small-7">
 
                         <div class="zf-code-reveal">
                             <a class="button primary" href="#0">Primary</a>
@@ -161,7 +161,6 @@
                             <a class="button success" href="#0">Success</a>
                             <a class="button warning" href="#0">Warning</a>
                             <a class="button alert" href="#0">Alert</a>
-                            <a href="#0" class="button">Link</a>
                         </div>
                         <div class="zf-code-reveal">
                             <button type="button" class="button primary" disabled>Primary</button>
@@ -169,7 +168,6 @@
                             <button type="button" class="button success" disabled>Success</button>
                             <button type="button" class="button warning" disabled>Warning</button>
                             <button type="button" class="button alert" disabled>Alert</button>
-                            <a href="#0" class="button disabled" disabled>Link</a>
                         </div>
                         <div class="zf-code-reveal">
                             <button class="hollow button" href="#0">Primary</button>
@@ -177,7 +175,6 @@
                             <button class="hollow button success" href="#0">Success</button>
                             <button class="hollow button warning" href="#0">Warning</button>
                             <button class="hollow button alert" href="#0">Alert</button>
-                            <a href="#0" class="hollow button">Link</a>
                         </div>
                         <div class="zf-code-reveal">
                             <button class="hollow button" href="#0" disabled>Primary</button>
@@ -185,7 +182,6 @@
                             <button class="hollow button success" href="#0" disabled>Success</button>
                             <button class="hollow button warning" href="#0" disabled>Warning</button>
                             <button class="hollow button alert" href="#0" disabled>Alert</button>
-                            <a class="hollow button" href="#0" disabled>Link</a>
                         </div>
                         <div class="zf-code-reveal">
                             <a class="clear button" href="#0">Primary</a>
@@ -193,7 +189,13 @@
                             <a class="clear button success" href="#0">Success</a>
                             <a class="clear button warning" href="#0">Warning</a>
                             <a class="clear button alert" href="#0">Alert</a>
-                            <a class="clear button" href="#0" disabled>Disabled</a>
+                        </div>
+                        <div class="zf-code-reveal">
+                            <a class="clear button" href="#0" disabled>Primary</a>
+                            <a class="clear button secondary" href="#0" disabled>Secondary</a>
+                            <a class="clear button success" href="#0" disabled>Success</a>
+                            <a class="clear button warning" href="#0" disabled>Warning</a>
+                            <a class="clear button alert" href="#0" disabled>Alert</a>
                         </div>
                         <div class="zf-code-reveal">
                             <button class="dropdown button primary" data-toggle="example-dropdown-primary">Primary</button>
@@ -240,9 +242,9 @@
                             <div class="tiny button">Tiny</div>
                         </div>
                     </div>
-                    <div class="cell small-6">
+                    <div class="cell small-5">
                         <div class="zf-code-reveal">
-                            <a class="expanded button" href="#0">Expanded Button</a>
+                            <a class="expanded large button" href="#0">Expanded Button</a>
                         </div>
                         <div class="zf-code-reveal">
                             <div class="large button-group">
@@ -279,9 +281,12 @@
                                 <a class="button">Group</a>
                             </div>
                         </div>
-                        <div class="grid-x grid-margin-x">
-                            <div class="cell small-3">
-                                <div class="zf-code-reveal">
+                        <div class="zf-code-reveal">
+                            <!--REVEAL-CODE
+                        <div class="grid-container">
+                        REVEAL-CODE-->
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-3">
                                     <div class="stacked button-group">
                                         <a class="button">Stacked</a>
                                         <a class="button">Button</a>
@@ -289,15 +294,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--REVEAL-CODE
+                        </div>
+                        REVEAL-CODE-->
                         </div>
                     </div>
                 </div>
-                <h3>Toggles</h3>
+                <h3 class="foundswatch">Toggles</h3>
                 <div class="grid-x grid-margin-x">
-                    <div class="cell medium-8">
+                    <div class="cell medium-7">
                         <div class="grid-x grid-margin-x">
                             <div class="cell medium-6">
-                                <h4>Checkbox Switches</h4>
+                                <h4 class="foundswatch">Checkbox Switches</h4>
                                 <div class="grid-x grid-margin-x">
                                     <div class="cell medium-6">
                                         <div class="zf-code-reveal">
@@ -353,7 +361,7 @@
                                 </div>
                             </div>
                             <div class="cell medium-6">
-                                <h4>Radio Switches</h4>
+                                <h4 class="foundswatch">Radio Switches</h4>
                                 <div class="zf-code-reveal">
                                     <div class="switch">
                                         <input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
@@ -377,8 +385,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cell small-4">
-                        <h4>Sliders</h4>
+                    <div class="cell small-5">
+                        <h4 class="foundswatch">Sliders</h4>
                         <div class="grid-x grid-margin-x">
                             <div class="cell medium-10">
                                 <div class="zf-code-reveal">
@@ -419,10 +427,10 @@
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Typography -->
-                <h2>Typography</h2>
+                <h2 class="foundswatch">Typography</h2>
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-4">
-                        <h3>Headings</h3>
+                        <h3 class="foundswatch">Headings</h3>
                         <div class="zf-code-reveal">
                             <h1>Heading 1</h1>
                             <h2>Heading 2</h2>
@@ -440,7 +448,7 @@
                         </div>
                     </div>
                     <div class="cell medium-4">
-                        <h3>Paragraphs</h3>
+                        <h3 class="foundswatch">Paragraphs</h3>
                         <div class="zf-code-reveal">
                             <p>This is an example of a paragraph of text. Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Hic quasi expedita distinctio amet laboriosam rerum quaerat nulla. Unde porro nemo
@@ -463,8 +471,8 @@
                         </div>
                     </div>
                     <div class="cell medium-4">
-                        <h3>Lists</h3>
-                        <h4>Unordered</h4>
+                        <h3 class="foundswatch">Lists</h3>
+                        <h4 class="foundswatch">Unordered</h4>
                         <div class="zf-code-reveal">
                             <ul>
                                 <li>List item</li>
@@ -475,7 +483,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <h4>Ordered</h4>
+                        <h4 class="foundswatch">Ordered</h4>
                         <div class="zf-code-reveal">
                             <ol>
                                 <li>List item</li>
@@ -486,7 +494,7 @@
                                 </li>
                             </ol>
                         </div>
-                        <h4>Definition</h4>
+                        <h4 class="foundswatch">Definition</h4>
                         <div class="zf-code-reveal">
                             <dl>
                                 <dt>First term</dt>
@@ -499,14 +507,14 @@
                 </div>
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-4">
-                        <h3>Statistics</h3>
+                        <h3 class="foundswatch">Statistics</h3>
                         <div class="zf-code-reveal">
                             <p>The following is formatted as a statistic:</p>
                             <div class="stat">42</div>
                         </div>
                     </div>
                     <div class="cell medium-4">
-                        <h3>Code</h3>
+                        <h3 class="foundswatch">Code</h3>
                         <div class="zf-code-reveal">
                             <p>The following is code:
                                 <code>&lt;div&gt;</code>
@@ -517,7 +525,7 @@ This is preformatted text.
                         </div>
                     </div>
                     <div class="cell medium-4">
-                        <h3>Keystrokes</h3>
+                        <h3 class="foundswatch">Keystrokes</h3>
                         <div class="zf-code-reveal">
                             <p>Press
                                 <kbd>Cmd+C</kbd> (or
@@ -525,7 +533,7 @@ This is preformatted text.
                         </div>
                     </div>
                 </div>
-                <h3>Blockquotes</h3>
+                <h3 class="foundswatch">Blockquotes</h3>
                 <div class="zf-code-reveal">
                     <!--REVEAL-CODE
             <div class="grid-container">
@@ -534,19 +542,19 @@ This is preformatted text.
                         <div class="cell medium-4">
                             <blockquote class="text-left">
                                 &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
-                                <cite>Quotable Person</cite>
+                                <cite>Quotable Person from Somewhere</cite>
                             </blockquote>
                         </div>
                         <div class="cell medium-4">
                             <blockquote class="text-center">
                                 &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
-                                <cite>Quotable Person</cite>
+                                <cite>Quotable Person from Somewhere</cite>
                             </blockquote>
                         </div>
                         <div class="cell medium-4">
                             <blockquote class="text-right">
                                 &#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum deleniti magnam.&#8221;
-                                <cite>Quotable Person</cite>
+                                <cite>Quotable Person from Somewhere</cite>
                             </blockquote>
                         </div>
                     </div>
@@ -559,7 +567,7 @@ This is preformatted text.
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Tables -->
-                <h2>Tables</h2>
+                <h2 class="foundswatch">Tables</h2>
                 <div class="zf-code-reveal">
                     <table>
                         <thead>
@@ -597,7 +605,7 @@ This is preformatted text.
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Forms -->
-                <h2>Forms</h2>
+                <h2 class="foundswatch">Forms</h2>
                 <div class="zf-code-reveal">
                     <form>
                         <div class="grid-x grid-margin-x">
@@ -678,10 +686,10 @@ This is preformatted text.
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Navigation -->
-                <h2>Navigation</h2>
+                <h2 class="foundswatch">Navigation</h2>
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-6">
-                        <h3>Menu</h3>
+                        <h3 class="foundswatch">Menu</h3>
                         <div class="zf-code-reveal">
                             <ul class="menu">
                                 <li>
@@ -712,7 +720,7 @@ This is preformatted text.
                         </div>
                     </div>
                     <div class="cell medium-6">
-                        <h3>Dropdown Menu</h3>
+                        <h3 class="foundswatch">Dropdown Menu</h3>
                         <div class="zf-code-reveal">
                             <ul class="dropdown menu" data-dropdown-menu>
                                 <li>
@@ -779,7 +787,7 @@ This is preformatted text.
                 </div>
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-6">
-                        <h3>Tabs</h3>
+                        <h3 class="foundswatch">Tabs</h3>
                         <div class="zf-code-reveal">
                             <ul class="tabs" data-tabs id="example-tabs">
                                 <li class="tabs-title is-active">
@@ -838,7 +846,7 @@ This is preformatted text.
                         </div>
                     </div>
                     <div class="cell medium-6">
-                        <h3>Accordion Menu</h3>
+                        <h3 class="foundswatch">Accordion Menu</h3>
                         <div class="zf-code-reveal">
                             <ul class="vertical menu" data-accordion-menu>
                                 <li>
@@ -882,7 +890,7 @@ This is preformatted text.
                                 </li>
                             </ul>
                         </div>
-                        <h3>Drilldown Menu</h3>
+                        <h3 class="foundswatch">Drilldown Menu</h3>
                         <div class="zf-code-reveal">
                             <ul class="vertical menu" data-drilldown style="width: 200px" id="m1">
                                 <li>
@@ -971,7 +979,7 @@ This is preformatted text.
                 </div>
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-6">
-                        <h3>Breadcrumbs</h3>
+                        <h3 class="foundswatch">Breadcrumbs</h3>
                         <div class="zf-code-reveal">
                             <nav aria-label="You are here:" role="navigation">
                                 <ul class="breadcrumbs">
@@ -990,7 +998,7 @@ This is preformatted text.
                         </div>
                     </div>
                     <div class="cell medium-6">
-                        <h3>Pagination</h3>
+                        <h3 class="foundswatch">Pagination</h3>
                         <div class="zf-code-reveal">
                             <ul class="pagination" role="navigation" aria-label="Pagination">
                                 <li class="disabled">Previous
@@ -1028,21 +1036,135 @@ This is preformatted text.
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Indicators -->
-                <h2>Indicators</h2>
+                <h2 class="foundswatch">Indicators</h2>
+
+                <div class="grid-x grid-margin-x">
+                    <div class="cell">
+                        <h3 class="foundswatch">Callouts</h3>
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell medium-4">
+                                <div class="zf-code-reveal">
+                                    <div class="callout" data-closable>
+                                        <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>This is a default callout</h5>
+                                        <p>
+                                            <strong>Hey!</strong> This is paragraph text inside the default callout.
+                                            <a href="#0">Here's a link.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell medium-4">
+                                <div class="zf-code-reveal">
+                                    <div class="callout primary" data-closable>
+                                        <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>This is a primary callout</h5>
+                                        <p>
+                                            <strong>Welcome!</strong> This is paragraph text inside the primary callout.
+                                            <a href="#0">Here's a link.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell medium-4">
+                                <div class="zf-code-reveal">
+                                    <div class="callout secondary" data-closable>
+                                        <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>This is a secondary callout</h5>
+                                        <p>
+                                            <strong>Did you know?</strong> This is paragraph text inside the secondary callout.
+                                            <a href="#0">Here's a link.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell medium-4">
+                                <div class="zf-code-reveal">
+                                    <div class="callout success" data-closable>
+                                        <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>This is a success callout</h5>
+                                        <p>
+                                            <strong>Hooray!</strong> This is paragraph text inside the success callout.
+                                            <a href="#0">Here's a link.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell medium-4">
+                                <div class="zf-code-reveal">
+                                    <div class="callout warning" data-closable>
+                                        <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>This is a warning callout</h5>
+                                        <p>
+                                            <strong>Be careful!</strong> This is paragraph text inside the warning callout.
+                                            <a href="#0">Here's a link.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell medium-4">
+                                <div class="zf-code-reveal">
+                                    <div class="callout alert" data-closable>
+                                        <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>This is an alert callout</h5>
+                                        <p>
+                                            <strong>Whoops!</strong> This is paragraph text inside the alert callout.
+                                            <a href="#0">Here's a link.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell medium-8">
+                                <div class="zf-code-reveal">
+                                    <div class="large callout" data-closable>
+                                        <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h3>This is a large callout</h3>
+                                        <p class="lead">
+                                            <strong>Super important!</strong> This is lead paragraph text inside the large callout.
+                                            <a href="#0">Here's a link.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell medium-4">
+                                <div class="zf-code-reveal">
+                                    <div class="small callout" data-closable>
+                                        <button class="close-button" aria-label="Close alert" type="button" data-close>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>Small callout</h5>
+                                        <p>
+                                            <strong>Pssst!</strong> This is a small callout
+                                            <a href="#0">with a link.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-6">
-                        <h3>Badges</h3>
-                        <div class="zf-code-reveal">
-                            <span class="primary badge">1</span>
-                            <span class="secondary badge">2</span>
-                            <span class="success badge">S</span>
-                            <span class="warning badge">W</span>
-                            <span class="alert badge">A</span>
-                        </div>
-                    </div>
-                    <div class="cell medium-6">
-                        <h3>Labels</h3>
+                        <h3 class="foundswatch">Labels</h3>
                         <div class="zf-code-reveal">
                             <span class="primary label">Primary</span>
                             <span class="secondary label">Secondary</span>
@@ -1051,11 +1173,21 @@ This is preformatted text.
                             <span class="alert label">Alert</span>
                         </div>
                     </div>
+                    <div class="cell medium-6">
+                        <h3 class="foundswatch">Badges</h3>
+                        <div class="zf-code-reveal">
+                            <span class="primary badge">1</span>
+                            <span class="secondary badge">2</span>
+                            <span class="success badge">S</span>
+                            <span class="warning badge">W</span>
+                            <span class="alert badge">A</span>
+                        </div>
+                    </div>
                 </div>
 
-                <h3>Progress Bars</h3>
+                <h3 class="foundswatch">Progress Bars</h3>
 
-                <h4>Without Text</h4>
+                <h4 class="foundswatch">Without Text</h4>
                 <div class="zf-code-reveal">
                     <div class="progress" role="progressbar" aria-valuenow="17" aria-valuetext="17 percent" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-meter" style="width: 17%"></div>
@@ -1073,7 +1205,7 @@ This is preformatted text.
                         <div class="progress-meter" style="width: 83%"></div>
                     </div>
                 </div>
-                <h4>With Text</h4>
+                <h4 class="foundswatch">With Text</h4>
                 <div class="zf-code-reveal">
                     <div class="progress" role="progressbar" aria-valuenow="17" aria-valuetext="17 percent" aria-valuemin="0" aria-valuemax="100">
                         <span class="progress-meter" style="width: 17%">
@@ -1106,8 +1238,8 @@ This is preformatted text.
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <!-- Containers -->
-                <h2>Containers</h2>
-                <h3>Accordions</h3>
+                <h2 class="foundswatch">Containers</h2>
+                <h3 class="foundswatch">Accordions</h3>
 
                 <div class="zf-code-reveal">
                     <ul class="accordion" data-accordion>
@@ -1134,92 +1266,8 @@ This is preformatted text.
                         </li>
                     </ul>
                 </div>
-                <h3>Callouts</h3>
 
-                <div class="grid-x grid-margin-x">
-                    <div class="cell medium-4">
-                        <div class="zf-code-reveal">
-                            <div class="callout" data-closable>
-                                <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h5>This is a default callout</h5>
-                                <p>
-                                    <strong>Hey!</strong> This is paragraph text inside the default callout.</p>
-                                <a href="#0">This is a link inside the callout</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell medium-4">
-                        <div class="zf-code-reveal">
-                            <div class="callout primary" data-closable>
-                                <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h5>This is a primary callout</h5>
-                                <p>
-                                    <strong>Welcome!</strong> This is paragraph text inside the primary callout.</p>
-                                <a href="#0">This is a link inside the callout</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell medium-4">
-                        <div class="zf-code-reveal">
-                            <div class="callout secondary" data-closable>
-                                <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h5>This is a secondary callout</h5>
-                                <p>
-                                    <strong>Did you know?</strong> This is paragraph text inside the secondary callout.</p>
-                                <a href="#0">This is a link inside the callout</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-x grid-margin-x">
-                    <div class="cell medium-4">
-                        <div class="zf-code-reveal">
-                            <div class="callout success" data-closable>
-                                <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h5>This is a success callout</h5>
-                                <p>
-                                    <strong>Hooray!</strong> This is paragraph text inside the success callout.</p>
-                                <a href="#0">This is a link inside the callout</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell medium-4">
-                        <div class="zf-code-reveal">
-                            <div class="callout warning" data-closable>
-                                <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h5>This is a warning callout</h5>
-                                <p>
-                                    <strong>Be careful!</strong> This is paragraph text inside the warning callout.</p>
-                                <a href="#0">This is a link inside the callout</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell medium-4">
-                        <div class="zf-code-reveal">
-                            <div class="callout alert" data-closable>
-                                <button class="close-button" aria-label="Close alert" type="button" data-close>
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h5>This is an alert callout</h5>
-                                <p>
-                                    <strong>Whoops!</strong> This is paragraph text inside the alert callout.</p>
-                                <a href="#0">This is a link inside the callout</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3>Cards</h3>
+                <h3 class="foundswatch">Cards</h3>
 
                 <div class="grid-x grid-margin-x small-up-2 medium-up-3">
                     <div class="cell">
@@ -1269,7 +1317,7 @@ This is preformatted text.
 
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-3">
-                        <h3>Dropdown Panes</h3>
+                        <h3 class="foundswatch">Dropdown Panes</h3>
 
                         <div class="zf-code-reveal">
                             <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
@@ -1278,27 +1326,31 @@ This is preformatted text.
                             </div>
                         </div>
 
-                        <h3>Modals</h3>
+                        <h3 class="foundswatch">Modals</h3>
                         <div class="zf-code-reveal">
                             <p>
                                 <a data-open="modalDialog" class="button">Reveal Modal</a>
                             </p>
                             <!--REVEAL-CODE
-                        <div class="reveal" id="modalDialog" data-reveal>
-                            <h1>Modal Dialog</h1>
-                            <p class="lead">
-                                <strong>This is strong lead text.</strong> You should now see the modal.</p>
-                            <p>This is a paragraph of text inside the modal dialog.</p>
-                            <p>And
-                                <a href="#0">this is a link</a> inside the modal dialog.</p>
-                            <p>
-                                <a class="button primary" href="#0" data-close aria-label="Close reveal">OK</a>
-                                <a class="button alert" href="#0" data-close aria-label="Close reveal">Cancel</a>
-                            </p>
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
+                            <div class="reveal" id="modalDialog" data-reveal>
+                                <h1>Modal Dialog</h1>
+                                <p class="lead">
+                                    <strong>This is strong lead text.</strong> You should now see the modal.</p>
+                                <p>This is a paragraph of text inside the modal dialog.</p>
+                                <p>And
+                                    <a href="#0">this is a link</a> inside the modal dialog.</p>
+                                <div class="grid-container">
+                                    <div class="grid-x grid-padding-x align-right">
+                                        <div class="cell medium-4">
+                                            <a class="button primary right" href="#0" data-close aria-label="Close reveal">OK</a>
+                                            <a class="button secondary right" href="#0" data-close aria-label="Close reveal">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                         REVEAL-CODE-->
                             <div class="reveal" id="modalDialog" data-reveal>
                                 <h1>Modal Dialog</h1>
@@ -1307,10 +1359,14 @@ This is preformatted text.
                                 <p>This is a paragraph of text inside the modal dialog.</p>
                                 <p>And
                                     <a href="#0">this is a link</a> inside the modal dialog.</p>
-                                <p>
-                                    <a class="button primary" href="#0" data-close aria-label="Close reveal">OK</a>
-                                    <a class="button alert" href="#0" data-close aria-label="Close reveal">Cancel</a>
-                                </p>
+                                <div class="grid-container">
+                                    <div class="grid-x grid-padding-x align-right">
+                                        <div class="cell medium-4">
+                                            <a class="button primary right" href="#0" data-close aria-label="Close reveal">OK</a>
+                                            <a class="button secondary right" href="#0" data-close aria-label="Close reveal">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <button class="close-button" data-close aria-label="Close reveal" type="button">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -1318,7 +1374,7 @@ This is preformatted text.
                         </div>
                     </div>
                     <div class="cell medium-3">
-                        <h3>Thumbnails</h3>
+                        <h3 class="foundswatch">Thumbnails</h3>
                         <div class="zf-code-reveal">
                             <img class="thumbnail" style="cursor: pointer;" src="https://placeimg.com/200/200/animals" alt="Animal-related Photo" data-open="thumbModal">
                             <div class="reveal" id="thumbModal" data-reveal>
@@ -1331,7 +1387,7 @@ This is preformatted text.
                         </div>
                     </div>
                     <div class="cell medium-6">
-                        <h3>Media Objects</h3>
+                        <h3 class="foundswatch">Media Objects</h3>
                         <div class="zf-code-reveal">
                             <div class="media-object">
                                 <div class="media-object-section">
@@ -1351,7 +1407,7 @@ This is preformatted text.
                     </div>
                 </div>
 
-                <h3>Carousel (Orbit)</h3>
+                <h3 class="foundswatch">Carousel (Orbit)</h3>
                 <div class="zf-code-reveal">
                     <div class="orbit" role="region" aria-label="Orbit Container" data-orbit>
                         <ul class="orbit-container">
@@ -1360,49 +1416,65 @@ This is preformatted text.
                             <button class="orbit-next" aria-label="next">
                                 <span class="show-for-sr">Next Slide</span>&#9654;</button>
                             <li class="is-active orbit-slide">
-                                <div style="padding: 2rem 4rem; color: #fefefe; background: dodgerblue;">
-                                    <p>
-                                        <strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
+                                <figure class="orbit-figure">
+                                    <div style="padding: 2rem 4rem 4rem 4rem; color: #fefefe; background: dodgerblue;">
+                                        <p>
+                                            <strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <p></p>
+                                    </div>
+                                    <figcaption class="orbit-caption">This is the caption for slide one.</figcaption>
+                                </figure>
                             </li>
                             <li class="orbit-slide">
-                                <div style="padding: 2rem 4rem; color: #fefefe; background: rebeccapurple;">
-                                    <p>
-                                        <strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
+                                <figure class="orbit-figure">
+                                    <div style="padding: 2rem 4rem 4rem 4rem; color: #fefefe; background: rebeccapurple;">
+                                        <p>
+                                            <strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                    <figcaption class="orbit-caption">This is the caption for slide two.</figcaption>
+                                </figure>
                             </li>
                             <li class="orbit-slide">
-                                <div style="padding: 2rem 4rem; color: #fefefe; background: darkgoldenrod;">
-                                    <p>
-                                        <strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
+                                <figure class="orbit-figure">
+                                    <div style="padding: 2rem 4rem 4rem 4rem; color: #fefefe; background: darkgoldenrod;">
+                                        <p>
+                                            <strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                    <figcaption class="orbit-caption">This is the caption for slide three.</figcaption>
+                                </figure>
                             </li>
                             <li class="orbit-slide">
-                                <div style="padding: 2rem 4rem; color: #fefefe; background: lightseagreen;">
-                                    <p>
-                                        <strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
+                                <figure class="orbit-figure">
+                                    <div style="padding: 2rem 4rem 4rem 4rem; color: #fefefe; background: lightseagreen;">
+                                        <p>
+                                            <strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                    <figcaption class="orbit-caption">This is the caption for slide four.</figcaption>
+                                </figure>
                             </li>
                         </ul>
                         <nav class="orbit-bullets">
@@ -1427,8 +1499,8 @@ This is preformatted text.
     </div>
 
     <!-- Close grid container -->
-    <div class="reveal" id="codeRevealModal" data-reveal>
-        <h4>Source Code</h4>
+    <div class="reveal" id="codeRevealModal" data-reveal data-options="closeOnClick:false;">
+        <h4 class="foundswatch">Source Code</h4>
         <pre id="codeRevealHtmlTarget" contenteditable="true">
             No source code to show :(
         </pre>

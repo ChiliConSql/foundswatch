@@ -1,7 +1,7 @@
 {
-    "name" : "Tough",
-    "tagline" : "Grit and mettle",
-    "dir" : "tough",
+    "name" : "Default",
+    "tagline" : "Default settings",
+    "dir" : "default",
     "jsfiddle" : "https://jsfiddle.net/",
     "theme_css" : "#",
     "theme_css_min" : "#",

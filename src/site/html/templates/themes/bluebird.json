@@ -1,7 +1,7 @@
 {
-    "name" : "Buzz",
-    "tagline" : "A pleasant commotion",
-    "dir" : "buzz",
+    "name" : "Bluebird",
+    "tagline" : "For savvy bootstrappers",
+    "dir" : "bluebird",
     "jsfiddle" : "https://jsfiddle.net/",
     "theme_css" : "#",
     "theme_css_min" : "#",
