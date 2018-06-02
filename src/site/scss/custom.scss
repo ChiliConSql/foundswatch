@@ -16,6 +16,8 @@ h1.foundswatch {
 h2.foundswatch {
     font-size: 40;
     margin-top: 2rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #b0b0b0;
 }
 
 h3.foundswatch {
@@ -26,4 +28,8 @@ h3.foundswatch {
 h4.foundswatch {
     font-size: 25;
     margin-top: .5rem;
+}
+
+#codeRevealHtmlTarget::selection { 
+    background: #3975b1; 
 }

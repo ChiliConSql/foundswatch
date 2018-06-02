@@ -580,19 +580,19 @@ This is preformatted text.
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Table data</td>
+                                <th>Row header</th>
                                 <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                                 <td>More table data</td>
                                 <td>This is even more table data</td>
                             </tr>
                             <tr>
-                                <td>Table data</td>
+                                <th>Row header</th>
                                 <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                                 <td>More table data</td>
                                 <td>This is even more table data</td>
                             </tr>
                             <tr>
-                                <td>Table data</td>
+                                <th>Row header</th>
                                 <td>Long line of table data. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                                 <td>More table data</td>
                                 <td>This is even more table data</td>
@@ -1377,6 +1377,15 @@ This is preformatted text.
                         <h3 class="foundswatch">Thumbnails</h3>
                         <div class="zf-code-reveal">
                             <img class="thumbnail" style="cursor: pointer;" src="https://placeimg.com/200/200/animals" alt="Animal-related Photo" data-open="thumbModal">
+                            <!--REVEAL-CODE
+                            <div class="reveal" id="thumbModal" data-reveal>
+                                <h2>Full Image</h2>
+                                <img src="https://placeimg.com/800/600/animals" alt="Animal-related Photo">
+                                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            REVEAL-CODE-->
                             <div class="reveal" id="thumbModal" data-reveal>
                                 <h2>Full Image</h2>
                                 <img src="https://placeimg.com/800/600/animals" alt="Animal-related Photo">
@@ -1501,7 +1510,7 @@ This is preformatted text.
     <!-- Close grid container -->
     <div class="reveal" id="codeRevealModal" data-reveal data-options="closeOnClick:false;">
         <h4 class="foundswatch">Source Code</h4>
-        <pre id="codeRevealHtmlTarget" contenteditable="true">
+        <pre id="codeRevealHtmlTarget" contenteditable="true" style="color: #f0f0f0; background-color: #1e1e1e; padding: 1rem; border-radius: .2rem;">
             No source code to show :(
         </pre>
         <button class="close-button" data-close aria-label="Close Source Code" type="button">
