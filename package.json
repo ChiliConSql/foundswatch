@@ -7,7 +7,7 @@
     "build": "npm-run-all -s build:delete-dist build-themes build-site",
     "build:delete-dist": "rimraf dist",
     "build-themes": "node ./build/scripts/themes/build_themes.js",
-    "build-site": "npm-run-all -p build-site:copy-assets build-site:copy-js build-site:copy-dist-themes build-site:copy-foundation-assets build-site:build-html",
+    "build-site": "npm-run-all -p build-site:copy-assets build-site:build-js build-site:build-css build-site:copy-dist-themes build-site:copy-foundation-assets build-site:build-html",
     "build-site:copy-assets": "copyfiles -u 2 \"./src/site/assets/**\" dist/site",
     "build-site:build-js": "webpack",
     "build-site:build-css": "node-sass ./src/site/scss/custom.scss ./dist/site/css/custom.css",

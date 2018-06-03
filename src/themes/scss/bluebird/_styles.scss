@@ -146,10 +146,13 @@
 // 18. Dropdown Menu
 // -----------------
 
-.dropdown.menu .submenu .is-submenu-item:hover {
-    background-color: rgb(248, 249, 250);
+.dropdown.menu .submenu {
+    border-radius: $global-radius;
+    
+    .is-submenu-item:hover {
+        background-color: rgb(248, 249, 250);
+    }
 }
-
 
 // 19. Flexbox Utilities
 // ---------------------
