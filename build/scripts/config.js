@@ -23,6 +23,7 @@ module.exports = new function () {
     this.siteHtmlTemplatesDir = this.srcDir + "/site/html/templates";
     this.siteHtmlThemeTemplatesDir = this.siteHtmlTemplatesDir + "/themes";
     this.siteHtmlIndexTemplate = this.siteHtmlTemplatesDir + "/index.mustache";
+    this.siteHtmlFooterPartial = this.siteHtmlTemplatesDir + "/_footer.mustache";
     this.siteHtmlHelpTemplate = this.siteHtmlTemplatesDir + "/help.mustache";
     this.siteHtmlThemeTemplate = this.siteHtmlTemplatesDir + "/theme.mustache";
 

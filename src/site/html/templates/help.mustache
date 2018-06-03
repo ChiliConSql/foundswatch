@@ -1,38 +1,118 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FoundSwatch</title>
+    <title>Foundswatch: Free themes for Zurb Foundation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{{root}}/vendor/foundation/css/foundation.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{root}}/css/custom.css" />
     <link rel="icon" type="img/ico" href="{{root}}/assets/ico/favicon.ico">
-    <script src=""></script>
 </head>
+
 <body>
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <div class="cell">
-                <img style="border-radius: 50%;" src="{{root}}/assets/img/foundswatch-256.png" alt="foundswatch logo">
-            </div>
-            <div class="cell">
-                <h1>Help</h1>
-            </div>
-            <div class="cell">
-                <div class="button primary">Primary</div>
-                <div class="button secondary">Secondary</div>
-            </div>
-            <div class="cell">
-                <h1>Available Themes:</h1>
-                <ul>
-                    {{#themeViews}}
-                    <li><a href="/{{dir}}">{{name}}</a> - {{tagline}}</li>    
-                    {{/themeViews}}
-                    <li><a href="{{root}}/">Home</a></li>
-                    <li><a href="{{root}}/help">Help</a></li>
-                </ul>
+    <a name="top"></a>
+    <div data-sticky-container>
+        <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+            <div class="grid-container" style="flex-grow:1;">
+                <div class="grid-x">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li class="menu-text">
+                                <a href="{{root}}/" style="padding: 0;">Foundswatch</a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#0">Themes</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                    {{#themeViews}}
+                                    <li>
+                                        <a href="{{root}}/{{dir}}">{{name}}</a>
+                                    </li>
+                                    {{/themeViews}}
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="{{root}}/help">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-bar-right">
+                        <ul class="menu">
+                            <li class="menu-text">
+                                <a href="https://foundation.zurb.com/" style="padding: 0;">Built With Foundation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="grid-container" style="padding-top: 2.5rem;">
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <h3>Getting Started</h3>
+                <p>Using Foundswatch themes is as simple as downloading the CSS file and replacing the default foundation one.</p>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <h3>Customization</h3>
+                <p>Clone the project from GitHub</p>
+                <p>In the project directory, execute
+                    <code>npm install</code> to install dependencies.</p>
+                <p>Modify the
+                    <code>_settings.scss</code> and
+                    <code>_styles.scss</code> files as you please.</p>
+                <p>Build the project using
+                    <code>npm run build</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    {{> footer }}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="{{root}}/vendor/foundation/js/foundation.js"></script>
+
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.core.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.box.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.imageLoader.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.keyboard.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.mediaQuery.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.motion.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.nest.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.timer.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.touch.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.util.triggers.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.abide.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.accordion.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.accordionMenu.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.drilldown.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.dropdown.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.dropdownMenu.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.equalizer.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.interchange.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.smoothScroll.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.magellan.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.offcanvas.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.orbit.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveMenu.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveToggle.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.reveal.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.slider.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.sticky.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.tabs.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.toggler.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.tooltip.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveAccordionTabs.js"></script>
+    <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveAccordionTabs.js"></script>
+    <script src="{{root}}/js/bundle.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 </body>
+
 </html>

@@ -11,6 +11,8 @@ let util = require('../util');
 
 console.log("Building HTML...");
 
+let footer = util.readFileContentsSync(config.siteHtmlFooterPartial);
+
 let themeTemplateViews = helpers.getThemeTemplateViews();
 
 // ------- Home index -------
@@ -21,7 +23,7 @@ let themeNames = themeTemplateViews.map((view) => {
 })
 
 let indexTemplate = util.readFileContentsSync(config.siteHtmlIndexTemplate);
-let renderedIndex = mustache.render(indexTemplate, {themeViews : themeTemplateViews, root: "."});
+let renderedIndex = mustache.render(indexTemplate, {themeViews : themeTemplateViews, root: "."}, {footer: footer});
 
 // Save rendered index file to dist
 util.writeFileContentsSync(config.siteDistHomeIndexHtml, renderedIndex);
@@ -29,7 +31,7 @@ util.writeFileContentsSync(config.siteDistHomeIndexHtml, renderedIndex);
 // ------- Help -------
 // Render the help template
 let helpTemplate = util.readFileContentsSync(config.siteHtmlHelpTemplate);
-let renderedHelpIndex = mustache.render(helpTemplate, {themeViews : themeTemplateViews, root: ".."});
+let renderedHelpIndex = mustache.render(helpTemplate, {themeViews : themeTemplateViews, root: ".."}, {footer: footer});
 
 // Save rendered help file to dist
 util.writeFileContentsSync(config.siteDistHelpIndexHtml, renderedHelpIndex);
@@ -45,7 +47,7 @@ for(let index in themeTemplateViews) {
 
     themeView.root = "..";
 
-    let renderedThemeIndex = mustache.render(themeTemplate, themeView);
+    let renderedThemeIndex = mustache.render(themeTemplate, themeView, {footer: footer});
 
     // Construct the filepath for saving
     let renderedThemeDir = config.siteDistDir + "/" + themeView.dir;

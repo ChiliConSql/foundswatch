@@ -39,6 +39,14 @@ h4.foundswatch {
     padding: .82rem .5rem;
 }
 
+// ---- Hero Section ----------------------------------------------------------
+
+.fs-hero {
+    color: white;
+    background-color: #1779ba; 
+    padding: 3rem 0;
+}
+
 // ---- Code Reveal -----------------------------------------------------------
 
 .zf-code-reveal {
@@ -60,4 +68,21 @@ h4.foundswatch {
 .fs-doc {
     cursor: pointer;
     padding: .4rem .5rem;
+}
+
+// ---- Buttons ----
+
+.fs-download-button {
+    margin-right: 0;
+}
+
+.fs-download-dropdown {
+    margin-left: 0;
+}
+
+// ---- Footer ----
+
+.fs-footer {
+    font-size: 80%;
+    padding-top: 3.5rem;
 }
