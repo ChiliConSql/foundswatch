@@ -1,3 +1,46 @@
+// ---- Typography ------------------------------------------------------------
+
+h1.foundswatch {
+    font-size: 48px;
+    margin-top: 4rem;
+}
+
+h2.foundswatch {
+    font-size: 40px;
+    margin-top: 2rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+h3.foundswatch {
+    font-size: 31px;
+    margin-top: 1rem;
+}
+
+h4.foundswatch {
+    font-size: 25px;
+    margin-top: .5rem;
+}
+
+// ---- Top Bar ---------------------------------------------------------------
+
+.fs-brand {
+    margin-right: 1rem;
+}
+
+.top-bar ul.menu li {
+
+    &.menu-text a {
+        padding: 0;
+    }
+}
+
+.top-bar ul.menu li a {
+    padding: .82rem .5rem;
+}
+
+// ---- Code Reveal -----------------------------------------------------------
+
 .zf-code-reveal {
     position: relative;
 }
@@ -6,28 +49,6 @@
     position: absolute;
     top: 0;
     right: 0;
-}
-
-h1.foundswatch {
-    font-size: 48;
-    margin-top: 4rem;
-}
-
-h2.foundswatch {
-    font-size: 40;
-    margin-top: 2rem;
-    padding-bottom: .3rem;
-    border-bottom: 1px solid #b0b0b0;
-}
-
-h3.foundswatch {
-    font-size: 31;
-    margin-top: 1rem;
-}
-
-h4.foundswatch {
-    font-size: 25;
-    margin-top: .5rem;
 }
 
 #codeRevealHtmlTarget::selection { 

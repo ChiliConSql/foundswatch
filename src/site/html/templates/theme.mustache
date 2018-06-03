@@ -32,9 +32,9 @@
         <div class="grid-container" style="flex-grow:1;">
             <div class="grid-x">
                 <div class="top-bar-left">
-                    <ul class="dropdown menu" data-dropdown-menu>
-                        <li class="menu-text">
-                            <a href="{{root}}/" style="padding: 0;">Foundswatch</a>
+                    <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+                        <li class="menu-text fs-brand">
+                            <a href="{{root}}/">Foundswatch</a>
                         </li>
                         <li class="has-submenu">
                             <a href="#0">Themes</a>
@@ -63,9 +63,9 @@
                     </ul>
                 </div>
                 <div class="top-bar-right">
-                    <ul class="menu">
+                    <ul class="dropdown menu">
                         <li class="menu-text">
-                            <a href="https://foundation.zurb.com/" style="padding: 0;">Built With Foundation</a>
+                            <a href="https://foundation.zurb.com/">Built With Foundation</a>
                         </li>
                     </ul>
                 </div>
@@ -89,7 +89,7 @@
                         <div class="zf-code-reveal">
                             <div class="top-bar">
                                 <div class="top-bar-left">
-                                    <ul class="dropdown menu" data-dropdown-menu>
+                                    <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true">
                                         <li class="menu-text">Top Bar</li>
                                         <li>
                                             <a href="#0">Home</a>
@@ -206,12 +206,12 @@
                                         <div class="grid-x grid-margin-x">
                                             <div class="cell medium-6">
                                                 <label>Name
-                                                    <input type="text" placeholder="Kirk, James T.">
+                                                    <input type="text" placeholder="Last, first">
                                                 </label>
                                             </div>
                                             <div class="cell medium-6">
-                                                <label>Rank
-                                                    <input type="text" placeholder="Captain">
+                                                <label>State
+                                                    <input type="text" placeholder="Two letters">
                                                 </label>
                                             </div>
                                         </div>
@@ -722,7 +722,7 @@ This is preformatted text.
                     <div class="cell medium-6">
                         <h3 class="foundswatch">Dropdown Menu</h3>
                         <div class="zf-code-reveal">
-                            <ul class="dropdown menu" data-dropdown-menu>
+                            <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true">
                                 <li>
                                     <a>Item 1</a>
                                     <ul class="menu">

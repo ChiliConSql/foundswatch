@@ -107,7 +107,7 @@
     background-color: $light-gray;
     border-radius: $global-radius;
 
-    & li {
+    li {
         text-transform: none;
         font-size: 1rem;
         color: $dark-gray;
@@ -145,6 +145,11 @@
 
 // 18. Dropdown Menu
 // -----------------
+
+.dropdown.menu .submenu .is-submenu-item:hover {
+    background-color: rgb(248, 249, 250);
+}
+
 
 // 19. Flexbox Utilities
 // ---------------------
@@ -273,19 +278,48 @@ table tr th {
 // 55. Top Bar
 // -----------
 
-.top-bar ul.menu li.menu-text {
-    color: $black;
-    font-size: rem-calc(20);
-    font-weight: normal;
+.top-bar ul.menu li {
+
+    &.menu-text {
+        color: $black;
+        font-size: rem-calc(20);
+        font-weight: normal;
+
+        a {
+            padding: 0;
+            color: rgba(0, 0, 0, 0.9);
+        }
+    }
+
+    a {
+        color: rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+
+    &.is-active a {
+        color: rgba(0, 0, 0, 0.9);
+    }
 }
 
-.top-bar ul.menu li.menu-text a {
-    color: $black;
-    font-size: rem-calc(20);
-    font-weight: normal;
+.top-bar ul.menu li a {
+    padding: .82rem .5rem;
 }
 
+// These change the color of the drop-down caret but only when used in a top bar
+.top-bar .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+}
 
+.top-bar .dropdown.menu > li.is-dropdown-submenu-parent > a:hover::after {
+    border-color: rgba(0, 0, 0, 0.7) transparent transparent;
+}
+
+.top-bar .dropdown.menu > li.is-dropdown-submenu-parent.is-active > a::after {
+    border-color: rgba(0, 0, 0, 0.9) transparent transparent;
+}
 
 // 56. Xy Grid
 // -----------

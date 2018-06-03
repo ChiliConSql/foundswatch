@@ -416,7 +416,7 @@ $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: 1px solid $medium-gray;
 $dropdown-menu-item-color-active: get-color(primary);
-$dropdown-menu-item-background-active: transparent;
+$dropdown-menu-item-background-active: rgb(248, 249, 250); //* transparent;
 
 // 19. Flexbox Utilities
 // ---------------------
@@ -864,8 +864,8 @@ $tooltip-radius: $global-radius;
 // 55. Top Bar
 // -----------
 
-$topbar-padding: 1rem 0.5rem; //*
-$topbar-background: $light-gray;
+$topbar-padding: 0.43rem .5rem; //*
+$topbar-background: rgb(248, 249, 250); //*
 $topbar-submenu-background: $white; //*
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
