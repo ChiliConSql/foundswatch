@@ -74,13 +74,13 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1140); //*
+$global-width: rem-calc(1140); //* rem-calc(1200);
 $global-lineheight: 1.5;
-$light-gray: #e9ecef; //*
-$medium-gray: #ced4da; //*
-$dark-gray: #6c757d; //*
-$black: #000; //*
-$white: #fff; //*
+$light-gray: #e9ecef; //* #e6e6e6;
+$medium-gray: #ced4da; //* #cacaca;
+$dark-gray: #6c757d; //* #8a8a8a;
+$black: #000; //* #0a0a0a;
+$white: #fff; //* #fefefe;
 // Bluebird proprietary colors
 $blue: #007bff; //+
 $indigo: #6610f2; //+
@@ -93,24 +93,24 @@ $green: #28a745; //+
 $teal: #20c997; //+
 $cyan: #17a2b8; //+
 $foundation-palette: (
-  primary: $blue, //*
-  secondary: $dark-gray, //*
-  success: $green, //*
-  warning: $yellow, //*
-  alert: $red, //*
+  primary: $blue, //* #1779ba,
+  secondary: $dark-gray, //* #767676,
+  success: $green, //* #3adb76,
+  warning: $yellow, //* #ffae00,
+  alert: $red, //* #cc4b37,
 );
 $body-background: $white;
-$body-font-color: #212529; //*
-$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //*
+$body-font-color: #212529; //* $black;
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //* 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: .25rem; //*
-$global-menu-padding: 0.7rem .5rem; //*
-$global-menu-nested-margin: 1.5rem .25rem; //*
+$global-radius: .25rem; //* 0;
+$global-menu-padding: 0.7rem .5rem; //* 0.7rem 1rem;
+$global-menu-nested-margin: 1.5rem .25rem; //* 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $global-prototype-breakpoints: false;
@@ -150,11 +150,11 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: 500; //*
+$header-font-weight: 500; //* $global-weight-normal;
 $header-font-style: normal;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default; //*
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default; //* Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
-$header-lineheight: 1.2; //*
+$header-lineheight: 1.2; //* 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
@@ -166,18 +166,18 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 2.5rem), //*
-    'h2': ('font-size': 2rem), //*
-    'h3': ('font-size': 1.75rem), //*
-    'h4': ('font-size': 1.5rem), //*
-    'h5': ('font-size': 1.25rem), //*
-    'h6': ('font-size': 1rem), //*
+    'h1': ('font-size': 2.5rem), //* 48),
+    'h2': ('font-size': 2rem), //* 40),
+    'h3': ('font-size': 1.75rem), //* 31),
+    'h4': ('font-size': 1.5rem), //* 25),
+    'h5': ('font-size': 1.25rem), //* 20),
+    'h6': ('font-size': 1rem), //* 16),
   ),
 );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
-$header-small-font-color: $dark-gray; //*
-$paragraph-lineheight: 1.5; //*
+$header-small-font-color: $dark-gray; //* $medium-gray;
+$paragraph-lineheight: 1.5; //* 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
@@ -202,9 +202,9 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $black; //*
+$blockquote-color: $black; //* $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
-$blockquote-border: 0; //*
+$blockquote-border: 0; //* 1px solid $medium-gray;
 $cite-font-size: rem-calc(13);
 $cite-color: $dark-gray;
 $cite-pseudo-content: '\2014 \0020';
@@ -273,7 +273,7 @@ $accordionmenu-arrow-size: 6px;
 
 $badge-background: $primary-color;
 $badge-color: $white;
-$badge-color-alt: $white; //*
+$badge-color-alt: $white; //* $black;
 $badge-palette: $foundation-palette;
 $badge-padding: 0.3em;
 $badge-minwidth: 2.1em;
@@ -287,53 +287,53 @@ $breadcrumbs-item-font-size: rem-calc(11);
 $breadcrumbs-item-color: $primary-color;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: 0.75rem; //*
+$breadcrumbs-item-margin: 0.75rem;
 $breadcrumbs-item-uppercase: true;
 $breadcrumbs-item-separator: true;
 $breadcrumbs-item-separator-item: '/';
 $breadcrumbs-item-separator-item-rtl: '\\';
-$breadcrumbs-item-separator-color: $dark-gray; //*
+$breadcrumbs-item-separator-color: $dark-gray; //* $medium-gray;
 
 // 11. Button
 // ----------
 
 $button-font-family: inherit;
-$button-padding: 0.65em .9em; //*
+$button-padding: 0.65em .9em; //* 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
-$button-color-alt: $white; //*
+$button-color-alt: $white; //* $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
-  tiny: 0.7rem, //*
-  small: 0.85rem, //*
-  default: 1.0rem, //*
-  large: 1.35rem, //*
+  tiny: 0.7rem, //* 0.6rem,
+  small: 0.85rem, //* 0.75rem,
+  default: 1.0rem, //* 0.9rem,
+  large: 1.35rem, //* 1.25rem,
 );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.65; //*
+$button-opacity-disabled: 0.65; //* 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; //*
+$button-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; //* background-color 0.25s ease-out, color 0.25s ease-out;
 
 // 12. Button Group
 // ----------------
 
 $buttongroup-margin: 1rem;
-$buttongroup-spacing: 0; //*
+$buttongroup-spacing: 0; //* 1px;
 $buttongroup-child-selector: '.button';
 $buttongroup-expand-max: 6;
-$buttongroup-radius-on-each: false; //*
+$buttongroup-radius-on-each: false; //* true;
 
 // 13. Callout
 // -----------
 
 $callout-background: $white;
 $callout-background-fade: 85%;
-$callout-border: 1px solid rgba($black, 0.15); //*
+$callout-border: 1px solid rgba($black, 0.15); //* 1px solid rgba($black, 0.25);
 $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
@@ -347,7 +347,7 @@ $callout-link-tint: 30%;
 $card-background: $white;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
-$card-border: 1px solid $medium-gray; //*
+$card-border: 1px solid $medium-gray; //* 1px solid $light-gray;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
@@ -471,10 +471,10 @@ $form-button-radius: $global-radius;
 
 $label-background: $primary-color;
 $label-color: $white;
-$label-color-alt: $white; //*
+$label-color-alt: $white; //* $black;
 $label-palette: $foundation-palette;
 $label-font-size: 0.8rem;
-$label-padding: 0.2rem 0.33333rem; //*
+$label-padding: 0.2rem 0.33333rem; //* 0.33333rem 0.5rem;
 $label-radius: $global-radius;
 
 // 22. Media Object
@@ -536,7 +536,7 @@ $maincontent-class: 'off-canvas-content';
 // ---------
 
 $orbit-bullet-background: $medium-gray;
-$orbit-bullet-background-active: $primary-color; //*
+$orbit-bullet-background-active: $primary-color; //* $dark-gray;
 $orbit-bullet-diameter: 1.2rem;
 $orbit-bullet-margin: 0.1rem;
 $orbit-bullet-margin-top: 0.8rem;
@@ -550,11 +550,11 @@ $orbit-control-zindex: 10;
 // 27. Pagination
 // --------------
 
-$pagination-font-size: rem-calc(16); //*
+$pagination-font-size: rem-calc(16); //* rem-calc(14);
 $pagination-margin-bottom: $global-margin;
-$pagination-item-color: $primary-color; //*
-$pagination-item-padding: rem-calc(8 14); //*
-$pagination-item-spacing: 0; //*
+$pagination-item-color: $primary-color; //* $black;
+$pagination-item-padding: rem-calc(8 14); //* rem-calc(3 10);
+$pagination-item-spacing: 0; //* rem-calc(1);
 $pagination-radius: $global-radius;
 $pagination-item-background-hover: $light-gray;
 $pagination-item-background-current: $primary-color;
@@ -569,7 +569,7 @@ $pagination-arrows: true;
 // ----------------
 
 $progress-height: 1rem;
-$progress-background: $light-gray; //*
+$progress-background: $light-gray; //* $medium-gray;
 $progress-margin-bottom: ($global-margin * .75);
 $progress-meter-background: $primary-color;
 $progress-radius: $global-radius;
@@ -864,9 +864,9 @@ $tooltip-radius: $global-radius;
 // 55. Top Bar
 // -----------
 
-$topbar-padding: 0.43rem .5rem; //*
-$topbar-background: rgb(248, 249, 250); //*
-$topbar-submenu-background: $white; //*
+$topbar-padding: 0.43rem .5rem; //* 0.5rem;
+$topbar-background: rgb(248, 249, 250); //* $light-gray;
+$topbar-submenu-background: $white; //* $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
