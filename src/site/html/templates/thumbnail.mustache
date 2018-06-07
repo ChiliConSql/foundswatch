@@ -4,43 +4,40 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Foundswatch: Free themes for Zurb Foundation</title>
+    <title>Foundswatch: {{name}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{root}}/vendor/foundation/css/foundation.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{root}}/css/themes/{{dir}}/foundation.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{root}}/css/custom.css" />
     <link rel="icon" type="img/ico" href="{{root}}/assets/ico/favicon.ico">
 </head>
 
 <body>
     <a name="top"></a>
+    <!-- Set up Off-canvas -->
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+                <!-- left off-canvas markup -->
+            </div>
+            <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+                <!-- right off-canvas markup -->
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- page content -->
+            </div>
+        </div>
+    </div>
+
     <div> <!-- data-sticky-container -->
         <div class="top-bar" style="width:100%"> <!-- data-sticky data-options="marginTop:0;" -->
             <div class="grid-container" style="flex-grow:1;">
                 <div class="grid-x">
                     <div class="top-bar-left">
-                        <ul class="dropdown menu" data-dropdown-menu>
+                        <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true">
                             <li class="menu-text fs-brand">
-                                <a href="{{root}}/" style="padding: 0;"><img src="{{root}}/assets/img/foundswatch-dark.png" style="width: 1.5rem; border-radius: 50%;">Foundswatch</a>
-                            </li>
-                            <li class="has-submenu">
-                                <a href="#0">Themes</a>
-                                <ul class="submenu menu vertical" data-submenu>
-                                    {{#themeViews}}
-                                    <li>
-                                        <a href="{{root}}/{{dir}}">{{name}}</a>
-                                    </li>
-                                    {{/themeViews}}
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="{{root}}/help">Help</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="top-bar-right">
-                        <ul class="menu">
-                            <li class="menu-text">
-                                <a href="https://foundation.zurb.com/" style="padding: 0;">Built With Foundation</a>
+                                <a href="{{root}}/">Foundswatch</a>
                             </li>
                         </ul>
                     </div>
@@ -49,72 +46,29 @@
         </div>
     </div>
 
-    <div class="fs-hero">
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x">
-                <div class="cell text-center">
-                    <h1>Foundswatch</h1>
-                    <h4>Free themes for Zurb Foundation</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--
-    <div class="grid-container" style="padding-top: 3.5rem;">
+    <div class="grid-container text-center" style="padding-bottom: 10rem;">
         <div class="grid-x grid-margin-x">
-            <div class="cell medium-4">
-                <p>Feature block</p>
-            </div>
-            <div class="cell medium-4">
-                <p>Feature block</p>
-            </div>
-            <div class="cell medium-4">
-                <p>Feature block</p>
+            <div class="cell">
+                <h1 style="margin-top: 1rem;">{{name}}</h1>
+                <p class="lead">{{tagline}}</p>
             </div>
         </div>
         <div class="grid-x grid-margin-x">
-            <div class="cell medium-4">
-                <p>Feature block</p>
-            </div>
-            <div class="cell medium-4">
-                <p>Feature block</p>
-            </div>
-            <div class="cell medium-4">
-                <p>Feature block</p>
-            </div>
-        </div>
-    </div>
-    -->
-    <div class="grid-container" style="padding-top: 3.5rem;">
-        <div class="grid-x grid-margin-x">
-            {{#themeViews}}
-            <div class="cell medium-4" style="margin-top: 2rem;">
-                <div class="card">
-                    <!--
-                    <a href="{{root}}/{{dir}}">
-                        <img src="http://via.placeholder.com/1000x600/483D3F/ffffff/?text={{name}}">
-                    </a>
-                    -->
-                    <div class="responsive-embed">
-                        <iframe src="{{root}}/{{dir}}/thumbnail.html" frameborder="0" width="360" height="200" scrolling="no"></iframe>
-                    </div>
-                    <div class="card-section text-center" style="background-color: #e6e6e6;">
-                        <h4>
-                            <a href="{{root}}/{{dir}}">{{name}}</a>
-                        </h4>
-                        <p>{{tagline}}</p>
+            <div class="cell">
+                <div class="grid-x grid-margin-x">
+                    <div class="cell small-12">
                         <div>
-                            <a class="primary button" href="{{root}}/{{dir}}">Preview</a>
-                            <a class="primary button fs-download-button" href="{{root}}/css/themes/{{dir}}/foundation.min.css">Download</a>
+                            <a class="button primary" href="#0">Primary</a>
+                            <a class="button secondary" href="#0">Secondary</a>
+                            <a class="button success" href="#0">Success</a>
+                            <a class="button warning" href="#0">Warning</a>
+                            <a class="button alert" href="#0">Alert</a>
                         </div>
                     </div>
                 </div>
             </div>
-            {{/themeViews}}
         </div>
     </div>
-
-    {{> footer }}
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -151,11 +105,10 @@
     <script src="{{root}}/vendor/foundation/js/plugins/foundation.toggler.js"></script>
     <script src="{{root}}/vendor/foundation/js/plugins/foundation.tooltip.js"></script>
     <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveAccordionTabs.js"></script>
-    <script src="{{root}}/vendor/foundation/js/plugins/foundation.responsiveAccordionTabs.js"></script>
-    <script src="{{root}}/js/bundle.js"></script>
     <script>
         $(document).foundation();
     </script>
+    <script src="{{root}}/js/bundle.js"></script>
 </body>
 
 </html>

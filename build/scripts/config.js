@@ -14,7 +14,7 @@ module.exports = new function () {
     this.themeMainCssFilename = "foundation.css";
     this.themeMainMinCssFilename = "foundation.min.css";
     // Restrict building to specific themes (speeds up development)
-    this.onlyCompileThemes = ["c"];
+    this.onlyCompileThemes = [];
 
     // ------ DISTRIBUTION -------------------------------------------------------
     this.themeDistDir = this.distDir + "/themes";
@@ -28,10 +28,12 @@ module.exports = new function () {
     this.siteHtmlFooterPartial = this.siteHtmlTemplatesDir + "/_footer.mustache";
     this.siteHtmlHelpTemplate = this.siteHtmlTemplatesDir + "/help.mustache";
     this.siteHtmlThemeTemplate = this.siteHtmlTemplatesDir + "/theme.mustache";
+    this.siteHtmlThumbnailTemplate = this.siteHtmlTemplatesDir + "/thumbnail.mustache";
 
     // ------ DISTRIBUTION -------------------------------------------------------
     this.siteDistDir = this.distDir + "/site";
     this.siteDistIndexFilename = "index.html";
+    this.siteDistThumbnailFilename = "thumbnail.html";
     this.siteDistHomeIndexHtml = this.siteDistDir + "/" + this.siteDistIndexFilename;
     this.siteDistHelpDir = this.siteDistDir + "/help";
     this.siteDistHelpIndexHtml = this.siteDistHelpDir + "/" + this.siteDistIndexFilename;

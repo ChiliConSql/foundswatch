@@ -38,6 +38,7 @@ util.writeFileContentsSync(config.siteDistHelpIndexHtml, renderedHelpIndex);
 
 // ------- Themes -------
 let themeTemplate = util.readFileContentsSync(config.siteHtmlThemeTemplate);
+let thumbnailTemplate = util.readFileContentsSync(config.siteHtmlThumbnailTemplate);
 
 for(let index in themeTemplateViews) {
 
@@ -48,11 +49,14 @@ for(let index in themeTemplateViews) {
     themeView.root = "..";
 
     let renderedThemeIndex = mustache.render(themeTemplate, themeView, {footer: footer});
+    let renderedThumbnailPage = mustache.render(thumbnailTemplate, themeView, {footer: footer});
 
     // Construct the filepath for saving
     let renderedThemeDir = config.siteDistDir + "/" + themeView.dir;
     let renderedThemeIndexPath = renderedThemeDir + "/" + config.siteDistIndexFilename;
+    let renderedThumbnailPath = renderedThemeDir + "/" + config.siteDistThumbnailFilename;
 
-    // Save rendered theme file to dist
+    // Save rendered theme files to dist
     util.writeFileContentsSync(renderedThemeIndexPath, renderedThemeIndex);
+    util.writeFileContentsSync(renderedThumbnailPath, renderedThumbnailPage);
 }
