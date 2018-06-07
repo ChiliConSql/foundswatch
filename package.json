@@ -11,7 +11,7 @@
     "build-site:copy-assets": "copyfiles -u 2 \"./src/site/assets/**\" dist/site",
     "build-site:build-js": "webpack",
     "build-site:build-css": "node-sass ./src/site/scss/custom.scss ./dist/site/css/custom.css",
-    "build-site:copy-dist-themes": "copyfiles -u 1 \"./dist/themes/**\" dist/site/css",
+    "build-site:copy-dist-themes": "copyfiles -u 1 \"./dist/themes/**\" dist/site/css && echo CSS files copied to dist! Ready to refresh the page.",
     "build-site:copy-foundation-assets": "copyfiles -u 3 \"node_modules/foundation-sites/dist/css/**\" dist/site/vendor/foundation && copyfiles -u 3 \"node_modules/foundation-sites/dist/js/**\" dist/site/vendor/foundation",
     "build-site:build-html": "node ./build/scripts/site/build_html.js",
     "build-site:build-and-copy-themes": "npm-run-all -s build-themes build-site:copy-dist-themes",

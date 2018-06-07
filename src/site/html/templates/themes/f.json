@@ -1,7 +1,7 @@
 {
-    "name" : "Default",
-    "tagline" : "Default settings",
-    "dir" : "default",
+    "name" : "F",
+    "tagline" : "Work in progress",
+    "dir" : "f",
     "jsfiddle" : "https://jsfiddle.net/",
     "theme_css" : "#",
     "theme_css_min" : "#",

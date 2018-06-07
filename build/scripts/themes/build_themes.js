@@ -11,7 +11,19 @@ let util = require('../util');
 
 let themeScssDirNames = util.getDirNamesSync(config.themeSrcScssDir);
 
+let onlyCompileThemes = config.onlyCompileThemes;
+
+if(onlyCompileThemes.length > 0)
+{
+    console.log("Only compiling: " + onlyCompileThemes);
+}
+
 for (let index in themeScssDirNames) {
-    helpers.compileThemeScss(themeScssDirNames[index], {compressed: false});
-    helpers.compileThemeScss(themeScssDirNames[index], {compressed: true});
+
+    let currDirName = themeScssDirNames[index];
+    if(onlyCompileThemes.length <= 0 || onlyCompileThemes.includes(currDirName))
+    {
+        helpers.compileThemeScss(currDirName, {compressed: false});
+        helpers.compileThemeScss(currDirName, {compressed: true});
+    }
 }
