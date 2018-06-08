@@ -97,6 +97,14 @@
 // 11. Button
 // ----------
 
+.button {
+    text-transform: uppercase;
+}
+
+.button.secondary {
+    border: 1px solid #050505;
+}
+
 // 12. Button Group
 // ----------------
 
@@ -228,6 +236,32 @@
 
 // 55. Top Bar
 // -----------
+
+.top-bar ul.menu li {
+
+    &.menu-text {
+        color: #FCFAF9;
+        font-size: rem-calc(20);
+        font-weight: normal;
+
+        a {
+            padding: 0;
+            color: #FCFAF9;
+        }
+    }
+
+    a {
+        color: #FCFAF9;
+
+        &:hover {
+            color: #FCFAF9;
+        }
+    }
+
+    &.is-active a {
+        color: #FCFAF9;
+    }
+}
 
 // 56. Xy Grid
 // -----------

@@ -14,7 +14,7 @@ module.exports = new function () {
     this.themeMainCssFilename = "foundation.css";
     this.themeMainMinCssFilename = "foundation.min.css";
     // Restrict building to specific themes (speeds up development)
-    this.onlyCompileThemes = [];
+    this.onlyCompileThemes = ["f"];
 
     // ------ DISTRIBUTION -------------------------------------------------------
     this.themeDistDir = this.distDir + "/themes";
