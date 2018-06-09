@@ -229,5 +229,31 @@
 // 55. Top Bar
 // -----------
 
+.top-bar ul.menu li {
+
+    &.menu-text {
+        color: $white;
+        font-size: rem-calc(20);
+        font-weight: normal;
+
+        a {
+            padding: 0;
+            color: $white;
+        }
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &.is-active a {
+        color: $white;
+    }
+}
+
 // 56. Xy Grid
 // -----------

@@ -73,19 +73,23 @@
 // 1. Global
 // ---------
 
+/*
+https://www.materialui.co/colors
+Material theme
+*/
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
+  primary: #039BE5, //* #1779ba,
+  secondary: #757575, //* #767676,
+  success: #43A047, //* #3adb76,
+  warning: #FFB300, //* #ffae00,
+  alert: #e53935, //* #cc4b37,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$dark-gray: #757575; //* #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
@@ -293,7 +297,7 @@ $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
-$button-color-alt: $black;
+$button-color-alt: $white; //* $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
@@ -303,9 +307,9 @@ $button-sizes: (
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -50%;
+$button-opacity-disabled: .1; //* 0.25;
+$button-background-hover-lightness: 2%; //* -20%;
+$button-hollow-hover-lightness: 0%; //* -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 
 // 12. Button Group
@@ -854,7 +858,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: #1E88E5; //* $light-gray;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
