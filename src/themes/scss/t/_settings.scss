@@ -70,6 +70,115 @@
 
 @import "../../../../node_modules/foundation-sites/scss/util/util";
 
+// Google font pairings by Lou Levit -- https://www.reliablepsd.com/ultimate-google-font-pairings/
+// Uncomment the @import to activate, then specify your selected pairings below.
+// ---
+// Pairing #1: modern|minimal|warm
+// @import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700');
+// Pairing #2: modern|minimal
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400');
+// Pairing #3: striking|classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro');
+// Pairing #4: modern|neutral
+// @import url('https://fonts.googleapis.com/css?family=Lora|Roboto:400,700');
+// Pairing #5: eccentric|classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:300');
+// Pairing #6: striking|eccentric|neutral
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda');
+// Pairing #7: eccentric|classic|minimal
+// @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i|Fira+Sans');
+// Pairing #8: modern|neutral
+// @import url('https://fonts.googleapis.com/css?family=PT+Sans:700|Playfair+Display');
+// Pairing #9: modern|striking|minimal
+// @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300');
+// Pairing #10: modern|minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300');
+// Pairing #11: modern|minimal|neutral|warm
+// @import url('https://fonts.googleapis.com/css?family=Arvo|Lato');
+// Pairing #12: classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Catamaran|Lato:400i');
+// Pairing #13: striking|classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Merriweather|Muli:300');
+// Pairing #14: modern|striking
+// @import url('https://fonts.googleapis.com/css?family=Bitter|PT+Sans:400i');
+// Pairing #15: striking|eccentric|warm
+// @import url('https://fonts.googleapis.com/css?family=Cinzel:700|Fauna+One');
+// Pairing #16: modern|striking|eccentric|classic|minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400i|Rubik');
+// Pairing #17: modern|classic|minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300');
+// Pairing #18: modern|striking|eccentric|classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Alegreya|Questrial');
+// Pairing #19: modern|striking|minimal
+// @import url('https://fonts.googleapis.com/css?family=Oswald|Quattrocento');
+// Pairing #20: eccentric|warm
+@import url('https://fonts.googleapis.com/css?family=Nunito:300|PT+Sans');
+// Pairing #21: modern|striking|eccentric|minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Unica+One');
+// Pairing #22: striking|eccentric|minimal
+// @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda');
+// Pairing #23: neutral|warm
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Varela+Round');
+// Pairing #24: modern|striking|eccentric|classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Raleway:500|Vollkorn:400i');
+// Pairing #25: minimal|warm
+// @import url('https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans');
+// Pairing #26: modern|striking|eccentric|warm
+// @import url('https://fonts.googleapis.com/css?family=Overpass|Permanent+Marker');
+// Pairing #27: striking|neutral
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700');
+// Pairing #28: neutral
+// @import url('https://fonts.googleapis.com/css?family=Sintony|Source+Sans+Pro:900');
+// Pairing #29: modern|striking|eccentric|neutral|warm
+// @import url('https://fonts.googleapis.com/css?family=Lato|Slabo+13px');
+// Pairing #30: minimal|warm
+// @import url('https://fonts.googleapis.com/css?family=PT+Serif|Rufina:700');
+// Pairing #31: modern|eccentric|neutral
+// @import url('https://fonts.googleapis.com/css?family=Dosis|Titillium+Web');
+// Pairing #32: modern|eccentric|warm
+// @import url('https://fonts.googleapis.com/css?family=Esteban|Oswald:300');
+// Pairing #33: striking|eccentric|warm
+// @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Source+Sans+Pro');
+// Pairing #34: minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Nunito');
+// Pairing #35: modern|neutral
+// @import url('https://fonts.googleapis.com/css?family=Catamaran:600|Merriweather+Sans:300');
+// Pairing #36: striking|eccentric|warm
+// @import url('https://fonts.googleapis.com/css?family=Alegreya|Bree+Serif');
+// Pairing #37: striking|classic|neutral
+// @import url('https://fonts.googleapis.com/css?family=Cardo|Libre+Franklin');
+// Pairing #38: modern|eccentric
+// @import url('https://fonts.googleapis.com/css?family=Average|Istok+Web:400i');
+// Pairing #39: minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto:500');
+// Pairing #40: classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Average+Sans|Goudy+Bookletter+1911');
+// Pairing #41: striking|eccentric
+// @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gentium+Book+Basic');
+// Pairing #42: minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Raleway:300');
+// Pairing #43: eccentric|warm
+// @import url('https://fonts.googleapis.com/css?family=Lato|Prata');
+// Pairing #44: striking|eccentric|classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Fanwood+Text|Shrikhand');
+// Pairing #45: classic|neutral
+// @import url('https://fonts.googleapis.com/css?family=Eczar:600|Merriweather');
+// Pairing #46: minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Chivo:300|Crimson+Text');
+// Pairing #47: classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Maven+Pro|Patua+One');
+// Pairing #48: modern|minimal
+// @import url('https://fonts.googleapis.com/css?family=Karla|Rubik');
+// Pairing #49: striking|classic|warm
+// @import url('https://fonts.googleapis.com/css?family=Neuton|Work+Sans');
+// Pairing #50: striking|eccentric|minimal|neutral
+// @import url('https://fonts.googleapis.com/css?family=Anton|Signika:300');
+@import "../fontpairings";
+
+// Selected pairings:
+$fs-header-font-family: $fs-pairing-20-header-font-family;
+$fs-body-font-family: $fs-pairing-20-body-font-family;
+
 // 1. Global
 // ---------
 
@@ -90,7 +199,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: #252525; //* $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: $fs-body-font-family; //* 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -138,7 +247,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: $fs-header-font-family; //* $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
