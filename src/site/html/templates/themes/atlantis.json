@@ -1,0 +1,10 @@
+{
+    "name" : "Atlantis",
+    "tagline" : "A gem in the abyss",
+    "dir" : "atlantis",
+    "jsfiddle" : "https://jsfiddle.net/",
+    "theme_css" : "#",
+    "theme_css_min" : "#",
+    "theme_vars" : "#",
+    "theme_styles" : "#"
+}

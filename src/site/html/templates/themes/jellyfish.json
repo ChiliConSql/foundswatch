@@ -1,0 +1,10 @@
+{
+    "name" : "Jellyfish",
+    "tagline" : "Bright orange on blue",
+    "dir" : "jellyfish",
+    "jsfiddle" : "https://jsfiddle.net/",
+    "theme_css" : "#",
+    "theme_css_min" : "#",
+    "theme_vars" : "#",
+    "theme_styles" : "#"
+}

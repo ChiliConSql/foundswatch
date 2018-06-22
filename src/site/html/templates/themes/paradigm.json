@@ -1,0 +1,10 @@
+{
+    "name" : "Paradigm",
+    "tagline" : "For bold ideas",
+    "dir" : "paradigm",
+    "jsfiddle" : "https://jsfiddle.net/",
+    "theme_css" : "#",
+    "theme_css_min" : "#",
+    "theme_vars" : "#",
+    "theme_styles" : "#"
+}
