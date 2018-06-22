@@ -232,26 +232,26 @@
 .top-bar ul.menu li {
 
     &.menu-text {
-        color: $black;
+        color: $white;
         font-size: rem-calc(20);
         font-weight: normal;
 
         a {
             padding: 0;
-            color: $black;
+            color: $white;
         }
     }
 
     a {
-        color: $black;
+        color: $white;
 
         &:hover {
-            color: $black;
+            color: $white;
         }
     }
 
     &.is-active a {
-        color: $black;
+        color: $white;
     }
 }
 

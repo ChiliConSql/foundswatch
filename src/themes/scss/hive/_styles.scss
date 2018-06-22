@@ -232,26 +232,26 @@
 .top-bar ul.menu li {
 
     &.menu-text {
-        color: #F8F32B;
+        color: rgb(250, 247, 79);
         font-size: rem-calc(20);
         font-weight: normal;
 
         a {
             padding: 0;
-            color: #F8F32B;
+            color: rgb(250, 247, 79);
         }
     }
 
     a {
-        color: #F8F32B;
+        color: rgb(250, 247, 79);
 
         &:hover {
-            color: #F8F32B;
+            color: rgb(250, 247, 79);
         }
     }
 
     &.is-active a {
-        color: #F8F32B;
+        color: rgb(250, 247, 79);
     }
 }
 

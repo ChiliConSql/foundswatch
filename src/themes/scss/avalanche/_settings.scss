@@ -80,16 +80,16 @@ $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #94B0DA, //* #1779ba,
   secondary: #DCEDFF, //* #767676,
-  success: #6BD425, //* #3adb76,
-  warning: #B39C4D, //* #ffae00,
-  alert: #E71D36, //* #cc4b37,
+  success: #8AEA92, //* #3adb76,
+  warning: #EEE3AB, //* #ffae00,
+  alert: #FE9992, //* #cc4b37,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: #343F3E; //* $white;
+$body-background: rgb(40, 43, 48); //* $white;
 $body-font-color: #DCEDFF; //* $black;
 $body-font-family: $fs-body-font-family; //* 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -855,7 +855,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: #94B0DA; //* $light-gray;
+$topbar-background: rgb(107, 126, 156); //* $light-gray;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;

@@ -69,7 +69,7 @@
 //  56. Xy Grid
 
 @import "../../../../node_modules/foundation-sites/scss/util/util";
-@import "../../_typography/fontpairings.7";
+@import "../../_typography/fontpairings.31";
 
 // 1. Global
 // ---------
@@ -77,20 +77,21 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+$light-gray: rgb(228, 228, 236); //* #e6e6e6;
+$medium-gray: rgb(186, 186, 197); //* #cacaca;
+$dark-gray: #5A5A66; //* #8a8a8a;
+$black: #0a0a0a;
+$white: rgb(247, 247, 255); //* #fefefe;
 $foundation-palette: (
-  primary: #92B4A7, //* #1779ba,
-  secondary: #5A5A66, //* #767676,
+  primary: $dark-gray, //* #1779ba,
+  secondary: rgb(59, 59, 66), //* #767676,
   success: #78C091, //* #3adb76,
   warning: #F7EF81, //* #ffae00,
   alert: #EC4E20, //* #cc4b37,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
-$body-background: #2F2F2F; //* $white;
-$body-font-color: #F3F9D2; //* $black;
+$body-background: rgb(44, 44, 49); //* $white;
+$body-font-color: $white; //* $black;
+$panel-font-color: $black; //+
 $body-font-family: $fs-body-font-family; //* 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -98,7 +99,7 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: .2rem; //* 0;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -176,10 +177,10 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+$anchor-color: rgb(150, 150, 223); //* $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
-$anchor-text-decoration-hover: none;
+$anchor-text-decoration-hover: underline; //* none;
 $hr-width: $global-width;
 $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
@@ -304,7 +305,7 @@ $button-sizes: (
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
+$button-opacity-disabled: 0.5; //* 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
@@ -313,10 +314,10 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 // ----------------
 
 $buttongroup-margin: 1rem;
-$buttongroup-spacing: 1px;
+$buttongroup-spacing: 0; //* 1px;
 $buttongroup-child-selector: '.button';
 $buttongroup-expand-max: 6;
-$buttongroup-radius-on-each: true;
+$buttongroup-radius-on-each: false; //* true;
 
 // 13. Callout
 // -----------
@@ -395,8 +396,8 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
-$dropdownmenu-arrow-size: 6px;
+$dropdownmenu-arrow-color: $white; //* $anchor-color;
+$dropdownmenu-arrow-size: 5px; //* 6px;
 $dropdownmenu-arrow-padding: 1.5rem;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
@@ -422,14 +423,14 @@ $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
 $form-spacing: rem-calc(16);
-$helptext-color: $black;
+$helptext-color: $body-font-color; //* $black;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
 $input-prefix-color: $black;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
-$form-label-color: $black;
+$form-label-color: $body-font-color; //* $black;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
@@ -763,7 +764,7 @@ $slider-radius: $global-radius;
 // 49. Switch
 // ----------
 
-$switch-background: $medium-gray;
+$switch-background: rgb(59, 59, 66); //* $medium-gray;
 $switch-background-active: $primary-color;
 $switch-height: 2rem;
 $switch-height-tiny: 1.5rem;
@@ -793,8 +794,8 @@ $table-head-background: smart-scale($table-background, $table-color-scale / 2);
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
-$table-head-font-color: $body-font-color;
-$table-foot-font-color: $body-font-color;
+$table-head-font-color: $panel-font-color; //* $body-font-color;
+$table-foot-font-color: $panel-font-color; //* $body-font-color;
 $show-header-for-stacked: false;
 $table-stack-breakpoint: medium;
 
