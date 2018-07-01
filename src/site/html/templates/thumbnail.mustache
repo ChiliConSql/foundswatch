@@ -39,6 +39,30 @@
                             <li class="menu-text fs-brand">
                                 <a href="{{root}}/">Foundswatch</a>
                             </li>
+                            <li class="has-submenu">
+                                <a href="#0">Themes</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                    {{#themeViews}}
+                                    <li>
+                                        <a href="{{root}}/{{dir}}">{{name}}</a>
+                                    </li>
+                                    {{/themeViews}}
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="{{root}}/help">Help</a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#0">{{name}}</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                    <li>
+                                        <a href="{{root}}/css/themes/{{dir}}/foundation.css">foundation.css</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{root}}/css/themes/{{dir}}/foundation.min.css">foundation.min.css</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -53,6 +77,7 @@
                 <p class="lead">{{tagline}}</p>
             </div>
         </div>
+        <div><p></p><p></p><p></p><p></p></div>
         <div class="grid-x grid-margin-x">
             <div class="cell">
                 <div class="grid-x grid-margin-x">
@@ -61,8 +86,6 @@
                             <a class="button primary" href="#0">Primary</a>
                             <a class="button secondary" href="#0">Secondary</a>
                             <a class="button success" href="#0">Success</a>
-                        </div>
-                        <div>
                             <a class="button warning" href="#0">Warning</a>
                             <a class="button alert" href="#0">Alert</a>
                         </div>

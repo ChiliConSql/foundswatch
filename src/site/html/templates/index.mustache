@@ -90,17 +90,24 @@
             {{#themeViews}}
             <div class="cell medium-4" style="margin-top: 2rem;">
                 <div class="card">
+                    <a href="{{root}}/{{dir}}">
+                        <img src="assets/img/thumbnails/{{dir}}.png">
+                    </a>
                     <!--
                     <a href="{{root}}/{{dir}}">
                         <img src="http://via.placeholder.com/1000x600/483D3F/ffffff/?text={{name}}">
                     </a>
-                    -->
                     <div class="responsive-embed">
                         <iframe src="{{root}}/{{dir}}/thumbnail.html" frameborder="0" width="360" height="200" scrolling="no"></iframe>
                     </div>
+                    
+                    -->
                     <div class="card-section text-center" style="background-color: #e6e6e6;">
                         <h4>
                             <a href="{{root}}/{{dir}}">{{name}}</a>
+                            <!--
+                            <a href="{{root}}/{{dir}}/thumbnail.html">📝</a>
+                            -->
                         </h4>
                         <p>{{tagline}}</p>
                         <div>
