@@ -26,6 +26,7 @@ module.exports = new function () {
     this.siteHtmlThemeTemplatesDir = this.siteHtmlTemplatesDir + "/themes";
     this.siteHtmlIndexTemplate = this.siteHtmlTemplatesDir + "/index.mustache";
     this.siteHtmlFooterPartial = this.siteHtmlTemplatesDir + "/_footer.mustache";
+    this.siteHtmlAnalyticsPartial = this.siteHtmlTemplatesDir + "/_analytics.mustache";
     this.siteHtmlHelpTemplate = this.siteHtmlTemplatesDir + "/help.mustache";
     this.siteHtmlThemeTemplate = this.siteHtmlTemplatesDir + "/theme.mustache";
     this.siteHtmlThumbnailTemplate = this.siteHtmlTemplatesDir + "/thumbnail.mustache";
