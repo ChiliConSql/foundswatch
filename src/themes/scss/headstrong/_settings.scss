@@ -69,7 +69,7 @@
 //  56. Xy Grid
 
 @import "../../../../node_modules/foundation-sites/scss/util/util";
-@import "../../_typography/fontpairings.26";
+@import "../../_typography/fontpairings.45";
 
 // 1. Global
 // ---------
@@ -83,14 +83,14 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #FFFFFF; //* #fefefe;
 $foundation-palette: (
-  primary: #2B2D42, //* #1779ba,
-  secondary: #CC2936, //* #767676,
+  primary: #CC2936, //* #1779ba,
+  secondary: $black, //* #767676,
   success: #44FFD1, //* #3adb76,
   warning: #FED18C, //* #ffae00,
   alert: #E63946, //* #cc4b37,
 );
 $body-background: $white;
-$body-font-color: #2B2D42; //* $black;
+$body-font-color: $black;
 $body-font-family: $fs-body-font-family; //* 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -143,7 +143,7 @@ $header-font-family: $fs-header-font-family; //* $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
+$header-color: $secondary-color; //* inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
