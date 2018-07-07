@@ -78,7 +78,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #3DFAFF, //* #1779ba,
+  primary: #08c9be, //* #1779ba,
   secondary: #FAFAFF, //* #767676,
   success: #2AFC98, //* #3adb76,
   warning: #FFF275, //* #ffae00,
@@ -855,7 +855,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: #3DFAFF; //* $light-gray;
+$topbar-background: $primary-color; //* $light-gray;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
