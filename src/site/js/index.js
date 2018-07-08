@@ -82,3 +82,9 @@ $(function () {
     $('.zf-code-reveal').hover(handleCodeRevealHoverIn, handleCodeRevealHoverOut);
     $('.zf-code-reveal').click(handleCodeRevealClick);
 });
+
+$(document).ready(function() {
+    $(".hideuntilpageloaded").each(function(){
+        $(this).removeAttr("style");
+    });
+});
