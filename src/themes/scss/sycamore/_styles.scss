@@ -97,6 +97,14 @@
 // 11. Button
 // ----------
 
+.button.primary {
+    color: $white;
+}
+
+.button.primary[disabled]:not(.hollow):not(.clear) {
+    color: $white;
+}
+
 // 12. Button Group
 // ----------------
 
@@ -229,29 +237,36 @@
 // 55. Top Bar
 // -----------
 
-.top-bar ul.menu li {
+.top-bar
+{
+    .dropdown.menu li a::after {
+        border-color: $white transparent transparent;
+    }
+    
+    ul.menu li {
 
-    &.menu-text {
-        color: $white;
-        font-size: rem-calc(20);
-        font-weight: normal;
+        &.menu-text {
+            color: $white;
+            font-size: rem-calc(20);
+            font-weight: normal;
+
+            a {
+                padding: 0;
+                color: $white;
+            }
+        }
 
         a {
-            padding: 0;
+            color: $white;
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        &.is-active a {
             color: $white;
         }
-    }
-
-    a {
-        color: $white;
-
-        &:hover {
-            color: $white;
-        }
-    }
-
-    &.is-active a {
-        color: $white;
     }
 }
 

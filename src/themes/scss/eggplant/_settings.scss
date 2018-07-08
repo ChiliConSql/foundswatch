@@ -98,7 +98,7 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 1rem; //* 0;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -304,7 +304,7 @@ $button-sizes: (
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
+$button-opacity-disabled: 0.5; //* 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;

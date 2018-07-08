@@ -229,29 +229,37 @@
 // 55. Top Bar
 // -----------
 
-.top-bar ul.menu li {
 
-    &.menu-text {
-        color: $black;
-        font-size: rem-calc(20);
-        font-weight: normal;
+.top-bar
+{
+    .dropdown.menu li a::after {
+        border-color: $black transparent transparent;
+    }
+    
+    ul.menu li {
+
+        &.menu-text {
+            color: $black;
+            font-size: rem-calc(20);
+            font-weight: normal;
+
+            a {
+                padding: 0;
+                color: $black;
+            }
+        }
 
         a {
-            padding: 0;
+            color: $black;
+
+            &:hover {
+                color: $black;
+            }
+        }
+
+        &.is-active a {
             color: $black;
         }
-    }
-
-    a {
-        color: $black;
-
-        &:hover {
-            color: $black;
-        }
-    }
-
-    &.is-active a {
-        color: $black;
     }
 }
 

@@ -205,6 +205,10 @@
 // 47. Reveal (Modal)
 // ------------------
 
+.reveal {
+    color: $black;
+}
+
 // 48. Slider
 // ----------
 
@@ -233,29 +237,36 @@ table {
 // 55. Top Bar
 // -----------
 
-.top-bar ul.menu li {
+.top-bar
+{
+    .dropdown.menu li a::after {
+        border-color: $white transparent transparent;
+    }
+    
+    ul.menu li {
 
-    &.menu-text {
-        color: $black;
-        font-size: rem-calc(20);
-        font-weight: normal;
+        &.menu-text {
+            color: $white;
+            font-size: rem-calc(20);
+            font-weight: normal;
+
+            a {
+                padding: 0;
+                color: $white;
+            }
+        }
 
         a {
-            padding: 0;
-            color: $black;
+            color: $white;
+
+            &:hover {
+                color: $white;
+            }
         }
-    }
 
-    a {
-        color: $black;
-
-        &:hover {
-            color: $black;
+        &.is-active a {
+            color: $white;
         }
-    }
-
-    &.is-active a {
-        color: $black;
     }
 }
 

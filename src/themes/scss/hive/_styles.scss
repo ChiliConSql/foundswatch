@@ -229,29 +229,36 @@
 // 55. Top Bar
 // -----------
 
-.top-bar ul.menu li {
+.top-bar
+{
+    .dropdown.menu li a::after {
+        border-color: rgb(250, 247, 79) transparent transparent;
+    }
+    
+    ul.menu li {
 
-    &.menu-text {
-        color: rgb(250, 247, 79);
-        font-size: rem-calc(20);
-        font-weight: normal;
+        &.menu-text {
+            color: rgb(250, 247, 79);
+            font-size: rem-calc(20);
+            font-weight: normal;
+
+            a {
+                padding: 0;
+                color: rgb(250, 247, 79);
+            }
+        }
 
         a {
-            padding: 0;
+            color: rgb(250, 247, 79);
+
+            &:hover {
+                color: rgb(250, 247, 79);
+            }
+        }
+
+        &.is-active a {
             color: rgb(250, 247, 79);
         }
-    }
-
-    a {
-        color: rgb(250, 247, 79);
-
-        &:hover {
-            color: rgb(250, 247, 79);
-        }
-    }
-
-    &.is-active a {
-        color: rgb(250, 247, 79);
     }
 }
 

@@ -84,10 +84,10 @@ $black: #0a0a0a;
 $white: #FFFFFF; //* #fefefe;
 $foundation-palette: (
   primary: #CC2936, //* #1779ba,
-  secondary: $black, //* #767676,
-  success: #44FFD1, //* #3adb76,
-  warning: #FED18C, //* #ffae00,
-  alert: #E63946, //* #cc4b37,
+  secondary: #414141, //* #767676,
+  success: #23CE6B, //* #3adb76,
+  warning: #FABC3C, //* #ffae00,
+  alert: rgb(255, 0, 21), //* #cc4b37,
 );
 $body-background: $white;
 $body-font-color: $black;
@@ -143,7 +143,7 @@ $header-font-family: $fs-header-font-family; //* $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: $secondary-color; //* inherit;
+$header-color: $primary-color; //* inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
@@ -304,7 +304,7 @@ $button-sizes: (
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
+$button-opacity-disabled: 0.5; //* 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;

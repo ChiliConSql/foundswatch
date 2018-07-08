@@ -88,9 +88,9 @@ $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #E0FBFC, //* #1779ba,
   secondary: #C2DFE3, //* #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
+  success: #81E8A7,
+  warning: #FFCB5C,
+  alert: #D97C6D,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -184,7 +184,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+$anchor-color: rgb(6, 141, 146); //* $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -242,7 +242,7 @@ $input-error-font-weight: $global-weight-bold;
 $accordion-background: $white;
 $accordion-plusminus: true;
 $accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
+$accordion-item-color: $anchor-color; //* $primary-color;
 $accordion-item-background-hover: $light-gray;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
@@ -282,7 +282,7 @@ $badge-font-size: 0.6rem;
 
 $breadcrumbs-margin: 0 0 $global-margin 0;
 $breadcrumbs-item-font-size: rem-calc(11);
-$breadcrumbs-item-color: $primary-color;
+$breadcrumbs-item-color: $anchor-color; //* $primary-color;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
 $breadcrumbs-item-margin: 0.75rem;
@@ -301,7 +301,7 @@ $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
+$button-color: $black;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
@@ -312,7 +312,7 @@ $button-sizes: (
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
+$button-opacity-disabled: 0.5; //* 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
@@ -381,7 +381,7 @@ $drilldown-nested-margin: 0;
 $drilldown-background: $white;
 $drilldown-submenu-padding: $drilldown-padding;
 $drilldown-submenu-background: $white;
-$drilldown-arrow-color: $primary-color;
+$drilldown-arrow-color: $anchor-color; //* $primary-color;
 $drilldown-arrow-size: 6px;
 
 // 17. Dropdown
@@ -556,7 +556,7 @@ $pagination-item-spacing: rem-calc(1);
 $pagination-radius: $global-radius;
 $pagination-item-background-hover: $light-gray;
 $pagination-item-background-current: $primary-color;
-$pagination-item-color-current: $white;
+$pagination-item-color-current: $black; //* $white;
 $pagination-item-color-disabled: $medium-gray;
 $pagination-ellipsis-color: $black;
 $pagination-mobile-items: false;
@@ -764,15 +764,15 @@ $slider-background: $light-gray;
 $slider-fill-background: $medium-gray;
 $slider-handle-height: 1.4rem;
 $slider-handle-width: 1.4rem;
-$slider-handle-background: $primary-color;
-$slider-opacity-disabled: 0.25;
+$slider-handle-background: $anchor-color; //* $primary-color;
+$slider-opacity-disabled: 0.5; //* 0.25;
 $slider-radius: $global-radius;
 
 // 49. Switch
 // ----------
 
 $switch-background: $medium-gray;
-$switch-background-active: $primary-color;
+$switch-background-active: $anchor-color; //* $primary-color;
 $switch-height: 2rem;
 $switch-height-tiny: 1.5rem;
 $switch-height-small: 1.75rem;
@@ -811,9 +811,9 @@ $table-stack-breakpoint: medium;
 
 $tab-margin: 0;
 $tab-background: $white;
-$tab-color: $primary-color;
+$tab-color: $anchor-color; //* $primary-color;
 $tab-background-active: $light-gray;
-$tab-active-color: $primary-color;
+$tab-active-color: $anchor-color; //* $primary-color;
 $tab-item-font-size: rem-calc(12);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
